@@ -1,0 +1,84 @@
+[
+  [
+    {
+      "id": 1,
+      "title": "Home",
+      "path": "/"
+    },
+    {
+      "id": 2,
+      "title": "About",
+      "path": "/about"
+    },
+    {
+      "id": 3,
+      "title": "Projects",
+      "path": "/projects"
+    },
+    {
+      "id": 4,
+      "title": "Stack",
+      "path": "/stack"
+    },
+    {
+      "id": 5,
+      "title": "Tools",
+      "path": "/tools"
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "width": 100,
+      "height": 100,
+      "title": "Design Wallet",
+      "description": "A curated library of screenshots & interaction patterns from the world&rsquo;s best digital products. Gain insights, explore trends and understand competitors and best practices.",
+      "path": "https://github.com/lokeshkavisth"
+    },
+    {
+      "id": 2,
+      "width": 100,
+      "height": 100,
+      "title": "Design Wallet",
+      "description": "A curated library of screenshots & interaction patterns from the world&rsquo;s best digital products. Gain insights, explore trends and understand competitors and best practices.",
+      "path": "https://github.com/lokeshkavisth"
+    },
+    {
+      "id": 3,
+      "width": 100,
+      "height": 100,
+      "title": "Design Wallet",
+      "description": "A curated library of screenshots & interaction patterns from the world&rsquo;s best digital products. Gain insights, explore trends and understand competitors and best practices.",
+      "path": "https://github.com/lokeshkavisth"
+    }
+  ],
+  [
+    {
+      "id": 1,
+      "title": "Go Connect: Bookings",
+      "description": "An online booking system for in-person or online appointments, designed to work standalone or alongside BaseKit Sitebuilder.",
+      "width": "auto",
+      "height": "auto",
+      "btn_text": "basekit.com",
+      "path": "https://github.com/lokeshkavisth"
+    },
+    {
+      "id": 2,
+      "title": "Does.Design",
+      "description": "An inclusive community for designers of all backgrounds and skill levels from around the globe.",
+      "width": "auto",
+      "height": "auto",
+      "btn_text": "does.design",
+      "path": "https://github.com/lokeshkavisth"
+    },
+    {
+      "id": 3,
+      "title": "BaseKit Onboarding",
+      "description": "An onboarding flow for the BaseKit sitebuilder designed to provide custom content and images for small business owners so they have an inspirational starting point they can use to quickly start building their website. Additionally, the onboarding flow captures the small business owners intent for their online presence so the correct features and tutorials can be presented to them at relevant times in the product.",
+      "width": "auto",
+      "height": "auto",
+      "btn_text": "gositebuilder.com",
+      "path": "https://github.com/lokeshkavisth"
+    }
+  ]
+]
