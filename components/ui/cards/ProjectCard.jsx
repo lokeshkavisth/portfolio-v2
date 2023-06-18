@@ -9,12 +9,14 @@ const ProjectCard = ({
   height,
   cardClass,
   cardImgClass,
+  imgDiv,
+  textDiv,
 }) => {
   return (
     <div
       className={`flex gap-10 bg-my_black_80 border border-my_black_60 p-6 rounded-md hover:bg-my_black_20 hover:bg-opacity-40 transition-all ${cardClass}`}
     >
-      <div className="min-w-max">
+      <div className={`min-w-max ${imgDiv}`}>
         <Image
           src={src}
           alt={title}
@@ -23,7 +25,7 @@ const ProjectCard = ({
           className={`rounded-xl ${cardImgClass}`}
         />
       </div>
-      <div>
+      <div className={textDiv}>
         <h3 className="text-md pb-2">{title}</h3>
         <p className="text-sm leading-6">{description}</p>
       </div>
