@@ -86,101 +86,81 @@
       {
         "id": 1,
         "title": "HTML",
-        "description": "frontend description"
+        "description": "Markup language for Web pages"
       },
       {
         "id": 2,
         "title": "CSS",
-        "description": "frontend description"
+        "description": "Style sheet language"
       },
       {
         "id": 3,
         "title": "JavaScript",
-        "description": "frontend description"
+        "description": "Programming language of the Web."
       },
       {
         "id": 4,
         "title": "MUI",
-        "description": "frontend description"
+        "description": "UI library for react components"
       },
       {
         "id": 5,
         "title": "Tailwind-CSS",
-        "description": "frontend description"
+        "description": "A utility-first CSS framework for rapid UI development"
       },
       {
         "id": 6,
         "title": "Bootstrap",
-        "description": "frontend description"
+        "description": "A utility-first CSS framework for rapid UI development"
       },
       {
         "id": 7,
         "title": "Sass/Scss",
-        "description": "frontend description"
+        "description": "CSS with superpowers"
       },
       {
         "id": 8,
         "title": "Less",
-        "description": "frontend description"
+        "description": "A backwards-compatible language extension for CSS"
       },
       {
         "id": 9,
         "title": "React.js",
-        "description": "frontend description"
+        "description": "The library for web and native user interfaces"
       },
       {
         "id": 10,
         "title": "Redux",
-        "description": "frontend description"
+        "description": "Library for managing and centralizing application state"
       },
       {
         "id": 11,
         "title": "jQuery",
-        "description": "frontend description"
+        "description": "A fast, small, and feature-rich JavaScript library"
       }
     ],
     [
       {
         "id": 1,
         "title": "Node.js",
-        "description": "backend description"
+        "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine"
       },
       {
         "id": 2,
         "title": "Express.js",
-        "description": "backend description"
-      },
-      {
-        "id": 3,
-        "title": "Unknown",
-        "description": "backend description"
-      },
-      {
-        "id": 4,
-        "title": "Unknown",
-        "description": "backend description"
+        "description": "A minimal and flexible Node.js web application framework"
       }
     ],
     [
       {
         "id": 1,
         "title": "MySQL",
-        "description": "database description"
+        "description": "A relational database management system"
       },
       {
         "id": 2,
         "title": "MongoDB",
-        "description": "database description"
-      },
-      {
-        "id": 3,
-        "title": "database",
-        "description": "database description"
-      },
-      {
-        "id": 4,
-        "title": "database",
-        "description": "database description"
+        "description": "A document-oriented database program"
       }
     ]
   ],

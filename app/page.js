@@ -3,10 +3,10 @@ import { FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import Button from "@/components/ui/buttons/Button";
 import divider from "../assets/divider.svg";
-import ProjectCard from "@/components/ui/cards/ProjectCard";
 // import Image from "next/image";
 import dummy from "../assets/images/Logo 500x500 px (1).jpeg";
 import data from "../data/data.json";
+import CardOne from "@/components/ui/cards/CardOne";
 
 const socialHome = [
   {
@@ -30,18 +30,18 @@ const socialHome = [
 ];
 export default function Home() {
   const socialLinksHome = socialHome?.map(({ id, title, icon, path }) => (
-    <li key={id} className=" hover:bg-my_black_20 p-2 rounded-md">
+    <li key={id} className=" hover:bg-black_02 p-2 rounded-md">
       <Link
         href={`${path}lokeshkavisth`}
         title={title}
-        className="hover:text-my_white"
+        className="hover:text-white_01"
       >
         {icon}
       </Link>
     </li>
   ));
 
-  const projectImages = [dummy, dummy, dummy];
+  const featuredImages = [dummy, dummy, dummy];
 
   return (
     <section className="space-y-8">
@@ -84,23 +84,18 @@ export default function Home() {
         </div>
 
         <div>
-          <ul className="space-y-10">
-            {data[1]?.map(
-              ({ id, title, description, height, width, path }, index) => (
-                <li key={id}>
-                  <Link href={path} target="_blank">
-                    <ProjectCard
-                      src={projectImages[index]}
-                      alt={title}
-                      width={width}
-                      height={height}
-                      title={title}
-                      description={description}
-                    />
-                  </Link>
-                </li>
-              )
-            )}
+          <ul className="space-y-6">
+            {data[1]?.map(({ id, title, description, path }, index) => (
+              <li key={id}>
+                <Link href={path} target="_blank">
+                  <CardOne
+                    src={featuredImages[index]}
+                    title={title}
+                    description={description}
+                  />
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
       </section>

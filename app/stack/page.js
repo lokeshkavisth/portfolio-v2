@@ -1,60 +1,62 @@
-import ProjectCard from "@/components/ui/cards/ProjectCard";
+"use client";
 import React from "react";
 import data from "../../data/data.json";
 import dummy from "../../assets/images/Logo 500x500 px (1).jpeg";
+import CardOne from "@/components/ui/cards/CardOne";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 
 const Stack = () => {
   const skillsLogo = [
-    [dummy, dummy, dummy, dummy, dummy, dummy, dummy, dummy],
+    [
+      dummy,
+      dummy,
+      dummy,
+      dummy,
+      dummy,
+      dummy,
+      dummy,
+      dummy,
+      dummy,
+      dummy,
+      dummy,
+    ],
     [dummy, dummy, dummy, dummy],
     [dummy, dummy, dummy, dummy],
   ];
 
-  const imgDIV =
-    "bg-my_black_60 bg-opacity-60 border-b border-b-my_black_20 p-6";
-
   const frontendSkills = data[3][0].map(({ id, title, description }, index) => (
-    <li key={id} className="w-80">
-      <ProjectCard
+    <li key={id}>
+      <CardOne
         src={skillsLogo[0][index]}
         title={title}
         description={description}
         width={100}
         height={100}
-        cardClass={"flex flex-col gap-5 p-0"}
-        cardImgClass={"mx-auto"}
-        imgDiv={imgDIV}
-        textDiv={"px-6 pb-6 pt-2"}
+        cardClass={"flex-col"}
       />
     </li>
   ));
   const backendSkills = data[3][1].map(({ id, title, description }, index) => (
-    <li key={id} className="w-80">
-      <ProjectCard
+    <li key={id}>
+      <CardOne
         src={skillsLogo[1][index]}
         title={title}
         description={description}
         width={100}
         height={100}
-        cardClass={"flex flex-col gap-5 p-0"}
-        cardImgClass={"mx-auto"}
-        imgDiv={imgDIV}
-        textDiv={"px-6 pb-6 pt-2"}
+        cardClass={"flex-col"}
       />
     </li>
   ));
   const databaseSkills = data[3][2].map(({ id, title, description }, index) => (
-    <li key={id} className="w-80">
-      <ProjectCard
+    <li key={id}>
+      <CardOne
         src={skillsLogo[2][index]}
         title={title}
         description={description}
         width={100}
         height={100}
-        cardClass={"flex flex-col gap-5 p-0"}
-        cardImgClass={"mx-auto"}
-        imgDiv={imgDIV}
-        textDiv={"px-6 pb-6 pt-2"}
+        cardClass={"flex-col"}
       />
     </li>
   ));
@@ -82,7 +84,13 @@ const Stack = () => {
           </div>
 
           <div>
-            <ul className="grid grid-cols-3 gap-5">{frontendSkills}</ul>
+            <ul>
+              <ResponsiveMasonry>
+                <Masonry columnsCount={3} gutter={"10px"}>
+                  {frontendSkills}
+                </Masonry>
+              </ResponsiveMasonry>
+            </ul>
           </div>
         </div>
 
@@ -96,7 +104,13 @@ const Stack = () => {
             </p>
           </div>
           <div>
-            <ul className="grid grid-cols-3 gap-5">{backendSkills}</ul>
+            <ul>
+              <ResponsiveMasonry>
+                <Masonry columnsCount={3} gutter={"10px"}>
+                  {backendSkills}
+                </Masonry>
+              </ResponsiveMasonry>
+            </ul>
           </div>
         </div>
 
@@ -110,7 +124,13 @@ const Stack = () => {
             </p>
           </div>
           <div>
-            <ul className="grid grid-cols-3 gap-5">{databaseSkills}</ul>
+            <ul>
+              <ResponsiveMasonry>
+                <Masonry columnsCount={3} gutter={"10px"}>
+                  {databaseSkills}
+                </Masonry>
+              </ResponsiveMasonry>
+            </ul>
           </div>
         </div>
       </section>

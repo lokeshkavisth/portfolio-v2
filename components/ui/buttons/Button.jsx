@@ -7,7 +7,7 @@ const Button = ({ path, text, title, icon }) => {
       href={path}
       title={title}
       target="_blank"
-      className="px-4 py-2 rounded-full border-my_black_40 text-base min-w-max max-w-max border bg-my_black_60 hover:bg-my_black_20 text-my_white transition-all font-medium flex items-center gap-2"
+      className="px-4 py-2 rounded-full text-base min-w-max max-w-max border border-black_05 bg-black_04 text-white_01 hover:bg-black_02 transition-all font-medium flex items-center gap-2"
     >
       {text}
       {icon}

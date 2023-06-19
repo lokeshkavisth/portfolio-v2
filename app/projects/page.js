@@ -1,8 +1,8 @@
-import ProjectCard from "@/components/ui/cards/ProjectCard";
 import React from "react";
 import data from "../../data/data.json";
 import dummy from "../../assets/images/Logo 500x500 px (1).jpeg";
 import Button from "@/components/ui/buttons/Button";
+import CardOne from "@/components/ui/cards/CardOne";
 // import { HiArrowUpRight } from "react-icons/hi";
 
 const Projects = () => {
@@ -11,15 +11,16 @@ const Projects = () => {
   const myProjects = data[2]?.map(
     ({ id, title, description, width, height, path, btn_text }, index) => (
       <li key={id} className="relative">
-        <ProjectCard
+        <CardOne
           src={projectImages[index]}
           title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}
           description={description}
           width={width}
           height={height}
-          cardClass={"flex flex-col pb-24"}
+          cardClass={"flex flex-col pb-24 gap-10"}
           cardImgClass={"aspect-video object-cover w-full"}
         />
+
         <div className="absolute bottom-8 left-6">
           <Button path={path} text={btn_text} />
         </div>
