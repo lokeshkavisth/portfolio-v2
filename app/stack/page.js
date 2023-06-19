@@ -4,24 +4,39 @@ import data from "../../data/data.json";
 import dummy from "../../assets/images/Logo 500x500 px (1).jpeg";
 import CardOne from "@/components/ui/cards/CardOne";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import html from "../../assets/images/html.svg";
+import css from "../../assets/images/css.svg";
+import javascript from "../../assets/images/javascript.png";
+import mui from "../../assets/images/mui.png";
+import react from "../../assets/images/react.svg";
+import tailwind from "../../assets/images/Tailwind.png";
+import bootstrap from "../../assets/images/Bootstrap.png";
+import sass from "../../assets/images/sass.svg";
+import less from "../../assets/images/less.svg";
+import redux from "../../assets/images/redux.png";
+import nodejs from "../../assets/images/nodeJs.svg";
+import mysql from "../../assets/images/mysql.svg";
+import mongodb from "../../assets/images/mongodb.png";
+import jquery from "../../assets/images/jquery.png";
+import express from "../../assets/images/express.png";
 
 const Stack = () => {
   const skillsLogo = [
     [
-      dummy,
-      dummy,
-      dummy,
-      dummy,
-      dummy,
-      dummy,
-      dummy,
-      dummy,
-      dummy,
-      dummy,
-      dummy,
+      html,
+      css,
+      javascript,
+      mui,
+      tailwind,
+      bootstrap,
+      sass,
+      less,
+      react,
+      redux,
+      jquery,
     ],
-    [dummy, dummy, dummy, dummy],
-    [dummy, dummy, dummy, dummy],
+    [nodejs, express],
+    [mysql, mongodb],
   ];
 
   const frontendSkills = data[3][0].map(({ id, title, description }, index) => (
@@ -30,9 +45,10 @@ const Stack = () => {
         src={skillsLogo[0][index]}
         title={title}
         description={description}
-        width={100}
-        height={100}
+        width={50}
+        height={50}
         cardClass={"flex-col"}
+        cardImgClass={"border border-black_02 bg-black_04 p-2"}
       />
     </li>
   ));
@@ -42,9 +58,10 @@ const Stack = () => {
         src={skillsLogo[1][index]}
         title={title}
         description={description}
-        width={100}
-        height={100}
+        width={50}
+        height={50}
         cardClass={"flex-col"}
+        cardImgClass={"border border-black_02 bg-black_04 p-2"}
       />
     </li>
   ));
@@ -54,9 +71,10 @@ const Stack = () => {
         src={skillsLogo[2][index]}
         title={title}
         description={description}
-        width={100}
-        height={100}
+        width={50}
+        height={50}
         cardClass={"flex-col"}
+        cardImgClass={"border border-black_02 bg-black_04 p-2"}
       />
     </li>
   ));
