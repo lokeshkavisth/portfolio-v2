@@ -55,30 +55,27 @@
   [
     {
       "id": 1,
-      "title": "Go Connect: Bookings",
-      "description": "An online booking system for in-person or online appointments, designed to work standalone or alongside BaseKit Sitebuilder.",
-      "width": "auto",
-      "height": "auto",
-      "btn_text": "basekit.com",
-      "path": "https://github.com/lokeshkavisth"
+      "title": "Flashcard Generator",
+      "description": "Flashcard Generator is a web application that allows users to create, manage, and share custom flashcards. It provides an intuitive interface and a comprehensive set of features to enhance the learning process.",
+      "path": "https://flashcard-generator-alma.vercel.app/"
     },
     {
       "id": 2,
-      "title": "Does.Design",
-      "description": "An inclusive community for designers of all backgrounds and skill levels from around the globe.",
-      "width": "auto",
-      "height": "auto",
-      "btn_text": "does.design",
-      "path": "https://github.com/lokeshkavisth"
+      "title": "Resume Builder",
+      "description": "A porfessional resume builder web app where you choose from a variety of customizable templates and create a professional-looking resume that stands out to potential employers.",
+      "path": "https://resume-builder-almabetter.vercel.app/"
     },
     {
       "id": 3,
-      "title": "BaseKit Onboarding",
-      "description": "An onboarding flow for the BaseKit sitebuilder designed to provide custom content and images for small business owners so they have an inspirational starting point they can use to quickly start building their website. Additionally, the onboarding flow captures the small business owners intent for their online presence so the correct features and tutorials can be presented to them at relevant times in the product.",
-      "width": "auto",
-      "height": "auto",
-      "btn_text": "gositebuilder.com",
-      "path": "https://github.com/lokeshkavisth"
+      "title": "Todo",
+      "description": "A TODO app that used redux, tailwind and ReactJs.",
+      "path": "https://almabetter-todo-app.vercel.app/"
+    },
+    {
+      "id": 4,
+      "title": "BendyBorder",
+      "description": "A visual generator to build organic looking shapes with the help of CSS3 border-radius property.",
+      "path": "https://bendyborder.vercel.app/"
     }
   ],
   [

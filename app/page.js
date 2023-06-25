@@ -49,19 +49,29 @@ export default function Home() {
         Full Stack Web Developer crafting seamless, user-centric experiences.
       </h1>
       <p>
-        I’m Lokesh-Sharma, a IND based full stack web developer with over ten
-        minutes of experience. I specialise in frontend, backend and database
-        with a focus on simplicity & usability.
+        I’m Lokesh-Sharma, a IND based full stack web developer with over 1 year
+        of experience. As a developer, I am proficient in JavaScript, React,
+        Node.js, MongoDB and{" "}
+        <Link
+          href={"/stack"}
+          className="border-b-4 border-b-white_02 text-white_01"
+        >
+          Other
+        </Link>{" "}
+        web development languages and technologies. I am also familiar with user
+        research, wireframing, prototyping, and A/B testing.
       </p>
-      <p>
+      {/* <p>
         I’m currently working at WP Engine where I design some of the worlds
         best WordPress products including Advanced Custom Fields, WP Migrate and
         WP Offload Media.
-      </p>
+      </p> */}
       <p>
-        Before WP Engine, I worked at BaseKit where I helped shape the future of
-        website builders and tools to help small businesses thrive online. In my
-        spare time also build tools like Design Vault and Does.Design.
+        I am a highly motivated and results-oriented individual. I am always
+        eager to learn new things and I am always looking for ways to improve my
+        skills. I am confident that I have the skills and experience to be a
+        valuable asset to your team. I am eager to discuss my portfolio with you
+        and I look forward to hearing from you soon.
       </p>
       <div className="pt-16">
         <ul className="flex items-center gap-5 text-2xl">

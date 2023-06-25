@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import profile from "../../assets/images/profile (1).jpeg";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -16,11 +17,11 @@ const About = () => {
 
         <div className="space-y-8">
           <p>
-            I’m Dale a UK based product designer with over ten years of
-            experience. I specialise in interface design for mobile and
-            web-based applications with a focus on simplicity & usability. I’m
-            passionate about design and technology and how the two can converge
-            to create experiences for good.
+            I’m Lokesh Sharma a India based full stack web developer with over
+            one year of experience. I am proficient in JavaScript, React,
+            Node.js, MongoDB and Other web development languages and
+            technologies. I am also familiar with user research, wireframing,
+            prototyping, and A/B testing.
           </p>
           <p>
             I’m currently working at WP Engine where I design some of the worlds
@@ -40,10 +41,25 @@ const About = () => {
             Nationwide, BP, Telefónica, Apple & Amazon.
           </p>
           <p>
-            You can also find me working on my own projects: Design Vault, an
-            online library of UX/UI patterns and inspiration from real products,
-            and Does.Design, an inclusive community for designers of all
-            backgrounds and skill levels.
+            You can also find me working on my own projects:{" "}
+            <Link
+              href={"/projects"}
+              className="border-b-4 border-b-white_02 text-white_01"
+            >
+              Flashcard Generator
+            </Link>
+            , web application that allows users to create, manage, and share
+            custom flashcards, It provides an intuitive interface and a
+            comprehensive set of features to enhance the learning process. and{" "}
+            <Link
+              href={"/stack"}
+              className="border-b-4 border-b-white_02 text-white_01"
+            >
+              Resume Builder
+            </Link>
+            , an porfessional resume builder web app where you choose from a
+            variety of customizable templates and create a professional-looking
+            resume that stands out to potential employers.
           </p>
         </div>
       </div>
@@ -86,17 +102,42 @@ const About = () => {
         <ul className=" space-y-3 ml-10 mt-3 list-disc">
           <li>
             Designed credit goes to{" "}
-            <a
-              href="https://github.com/daleanthony"
+            <Link
+              href={"https://github.com/daleanthony"}
               target="_blank"
-              className=" underline decoration-wavy hover:text-purple-400"
+              className="border-b-4 border-b-white_02 text-white_01"
             >
               Dale-Anthony
-            </a>
+            </Link>
           </li>
-          <li>Hosted by Digital Ocean with deployment via RunCloud</li>
-          <li>Powered by KirbyCMS</li>
-          <li>Tracking data using Plausible, privacy focussed analytics</li>
+          <li>
+            Hosted and deployment via{" "}
+            <Link
+              href={"https://vercel.com/"}
+              target="_blank"
+              className="border-b-4 border-b-white_02 text-white_01"
+            >
+              Vercel
+            </Link>
+          </li>
+          <li>
+            Powered by{" "}
+            <Link
+              href={"https://nextjs.org/"}
+              target="_blank"
+              className="border-b-4 border-b-white_02 text-white_01"
+            >
+              Nextjs
+            </Link>{" "}
+            x{" "}
+            <Link
+              href={"https://vercel.com/"}
+              target="_blank"
+              className="border-b-4 border-b-white_02 text-white_01"
+            >
+              Vercel
+            </Link>
+          </li>
           <li>Set in the beautiful Monolisa typeface</li>
         </ul>
       </div>

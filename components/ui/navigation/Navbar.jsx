@@ -20,7 +20,7 @@ const Navbar = () => {
   ));
 
   return (
-    <nav className="border-b-2 border-black_02 backdrop-blur-xl sticky top-0 z-50 text-sm">
+    <nav className="border-b-2 border-black_02 backdrop-blur-xl sticky top-0 z-50 text-sm px-4">
       <span className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"></span>
       <div className="flex items-center justify-between max-w-[110em] mx-auto py-6 px-1">
         <div>
