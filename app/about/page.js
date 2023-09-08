@@ -20,8 +20,7 @@ const About = () => {
             I’m Lokesh Sharma a India based full stack web developer with over
             one year of experience. I am proficient in JavaScript, React,
             Node.js, MongoDB and Other web development languages and
-            technologies. I am also familiar with user research, wireframing,
-            prototyping, and A/B testing.
+            technologies.
           </p>
           <p>
             I’m currently working at WP Engine where I design some of the worlds
@@ -63,9 +62,12 @@ const About = () => {
           </p>
         </div>
       </div>
-      <hr />
 
-      <div>
+      {/* work section  */}
+
+      {/* <hr /> */}
+
+      {/* <div>
         <h2 className="text-xl mb-3">Work</h2>
         <ul className="space-y-5">
           <li className="flex items-center justify-between gap-2 [&>h4]:hover:text-purple-500">
@@ -92,55 +94,7 @@ const About = () => {
             </div>
           </li>
         </ul>
-      </div>
-
-      <hr />
-
-      <div>
-        <h2 className="text-xl mb-3">About this site</h2>
-        <p>In case you were wondering this site is:</p>
-        <ul className=" space-y-3 ml-10 mt-3 list-disc">
-          <li>
-            Designed credit goes to{" "}
-            <Link
-              href={"https://github.com/daleanthony"}
-              target="_blank"
-              className="border-b-4 border-b-white_02 text-white_01"
-            >
-              Dale-Anthony
-            </Link>
-          </li>
-          <li>
-            Hosted and deployment via{" "}
-            <Link
-              href={"https://vercel.com/"}
-              target="_blank"
-              className="border-b-4 border-b-white_02 text-white_01"
-            >
-              Vercel
-            </Link>
-          </li>
-          <li>
-            Powered by{" "}
-            <Link
-              href={"https://nextjs.org/"}
-              target="_blank"
-              className="border-b-4 border-b-white_02 text-white_01"
-            >
-              Nextjs
-            </Link>{" "}
-            x{" "}
-            <Link
-              href={"https://vercel.com/"}
-              target="_blank"
-              className="border-b-4 border-b-white_02 text-white_01"
-            >
-              Vercel
-            </Link>
-          </li>
-          <li>Set in the beautiful Monolisa typeface</li>
-        </ul>
-      </div>
+      </div> */}
     </section>
   );
 };
