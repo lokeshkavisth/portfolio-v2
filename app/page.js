@@ -49,9 +49,9 @@ export default function Home() {
         Full Stack Web Developer crafting seamless, user-centric experiences.
       </h1>
       <p>
-        I’m Lokesh-Sharma, a IND based full stack web developer with over 1 year
-        of experience. As a developer, I am proficient in JavaScript, React,
-        Node.js, MongoDB and{" "}
+        I&rsquo;m Lokesh-Sharma, a full-stack web developer living in Jaipur,
+        India. As a developer, I am proficient in JavaScript, React, Node.js,
+        MongoDB and{" "}
         <Link
           href={"/stack"}
           className="border-b-4 border-b-white_02 text-white_01"
@@ -102,6 +102,7 @@ export default function Home() {
                     src={featuredImages[index]}
                     title={title}
                     description={description}
+                    cardImgClass={"rounded-2xl w-36"}
                   />
                 </Link>
               </li>
