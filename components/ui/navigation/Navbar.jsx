@@ -1,12 +1,12 @@
 "use client";
 import React from "react";
-import data from "../../../data/data.json";
+import {nav_data} from "../../../data/data.json";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const currentPath = usePathname();
-  const navMenu = data[0].map(({ id, title, path }) => (
+  const navMenu = nav_data.map(({ id, title, path }) => (
     <li key={id}>
       <Link
         href={path}

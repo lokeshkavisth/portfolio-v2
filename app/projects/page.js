@@ -1,6 +1,6 @@
 "use client";
 import React, { Suspense } from "react";
-import data from "../../data/data.json";
+import { projects_data } from "../../data/data.json";
 import dummy from "../../assets/images/Logo 500x500 px (1).jpeg";
 import Button from "@/components/ui/buttons/Button";
 import CardOne from "@/components/ui/cards/CardOne";
@@ -13,22 +13,24 @@ import resume_builder from "../../assets/images/resume_builder.png";
 const Projects = () => {
   const projectImages = [flashcard, resume_builder, todo, bendy_border];
 
-  const myProjects = data[2]?.map(({ id, title, description, path }, index) => (
-    <li key={id} className="relative">
-      <CardOne
-        src={projectImages[index]}
-        title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}
-        description={description}
-        width={"auto"}
-        height={"auto"}
-        cardClass={"flex flex-col pb-24 gap-10"}
-        cardImgClass={"aspect-video object-cover w-full"}
-      />
-      <div className="absolute bottom-8 left-6">
-        <Button path={`/projects/${title}`} text={"learn more"} />
-      </div>
-    </li>
-  ));
+  const myProjects = projects_data?.map(
+    ({ id, title, description, path }, index) => (
+      <li key={id} className="relative">
+        <CardOne
+          src={projectImages[index]}
+          title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}
+          description={description}
+          width={"auto"}
+          height={"auto"}
+          cardClass={"flex flex-col pb-24 gap-10"}
+          cardImgClass={"aspect-video object-cover w-full"}
+        />
+        <div className="absolute bottom-8 left-6">
+          <Button href={path} target={"_blank"} text={"learn more"} />
+        </div>
+      </li>
+    )
+  );
 
   return (
     <div>
