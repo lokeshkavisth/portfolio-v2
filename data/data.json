@@ -1,5 +1,5 @@
-[
-  [
+{
+  "nav_data": [
     {
       "id": 1,
       "title": "Home",
@@ -19,19 +19,14 @@
       "id": 4,
       "title": "Stack",
       "path": "/stack"
-    },
-    {
-      "id": 5,
-      "title": "Tools",
-      "path": "/tools"
     }
   ],
-  [
+  "featured": [
     {
       "id": 1,
-      "title": "Design Wallet",
+      "title": "Flashcard Generator",
       "description": "A curated library of screenshots & interaction patterns from the world&rsquo;s best digital products. Gain insights, explore trends and understand competitors and best practices.",
-      "path": "https://github.com/lokeshkavisth"
+      "path": "https://generator-flashcard.vercel.app/"
     },
     {
       "id": 2,
@@ -40,7 +35,7 @@
       "path": "https://github.com/lokeshkavisth"
     }
   ],
-  [
+  "projects_data": [
     {
       "id": 1,
       "title": "Flashcard Generator",
@@ -66,37 +61,31 @@
       "path": "https://bendyborder.vercel.app/"
     }
   ],
-  [
-    [
+  "languages": {
+    "frontend": [
       {
         "id": 1,
-        "title": "HTML",
-        "description": "Markup language for Web pages"
+        "title": "HTML"
       },
       {
         "id": 2,
-        "title": "CSS",
-        "description": "Style sheet language"
+        "title": "CSS"
       },
       {
         "id": 3,
-        "title": "JavaScript",
-        "description": "Programming language of the Web."
+        "title": "JavaScript"
       },
       {
         "id": 4,
-        "title": "MUI",
-        "description": "UI library for react components"
+        "title": "MUI"
       },
       {
         "id": 5,
-        "title": "Tailwind-CSS",
-        "description": "A utility-first CSS framework for rapid UI development"
+        "title": "Tailwind-CSS"
       },
       {
         "id": 6,
-        "title": "Bootstrap",
-        "description": "A utility-first CSS framework for rapid UI development"
+        "title": "Bootstrap"
       },
       {
         "id": 7,
@@ -105,134 +94,40 @@
       },
       {
         "id": 8,
-        "title": "Less",
-        "description": "A backwards-compatible language extension for CSS"
+        "title": "Less"
       },
       {
         "id": 9,
-        "title": "React.js",
-        "description": "The library for web and native user interfaces"
+        "title": "React.js"
       },
       {
         "id": 10,
-        "title": "Redux",
-        "description": "Library for managing and centralizing application state"
+        "title": "Redux"
       },
       {
         "id": 11,
-        "title": "jQuery",
-        "description": "A fast, small, and feature-rich JavaScript library"
+        "title": "jQuery"
       }
     ],
-    [
+    "backend": [
       {
         "id": 1,
-        "title": "Node.js",
-        "description": "A JavaScript runtime built on Chrome's V8 JavaScript engine"
+        "title": "Node.js"
       },
       {
         "id": 2,
-        "title": "Express.js",
-        "description": "A minimal and flexible Node.js web application framework"
+        "title": "Express.js"
       }
     ],
-    [
+    "database": [
       {
         "id": 1,
-        "title": "MySQL",
-        "description": "A relational database management system"
+        "title": "MySQL"
       },
       {
         "id": 2,
-        "title": "MongoDB",
-        "description": "A document-oriented database program"
+        "title": "MongoDB"
       }
     ]
-  ],
-  [
-    [
-      {
-        "id": 1,
-        "title": "Figma",
-        "description": "My design tool of choice",
-        "path": "https://github.com/lokeshkavisth"
-      },
-      {
-        "id": 2,
-        "title": "Telegram",
-        "description": "Reliable, lightning quick, secure messaging",
-        "path": "https://github.com/lokeshkavisth"
-      },
-      {
-        "id": 3,
-        "title": "AdGuard",
-        "description": "A powerful ad and content blocker used across all my devices",
-        "path": "https://github.com/lokeshkavisth"
-      },
-      {
-        "id": 4,
-        "title": "VScode",
-        "description": "A superfast, powerful, lightweight and fully customizable code editor",
-        "path": "https://github.com/lokeshkavisth"
-      },
-      {
-        "id": 5,
-        "title": "ShareX",
-        "description": "A free and open-source screenshot and screencast program",
-        "path": "https://github.com/lokeshkavisth"
-      },
-      {
-        "id": 6,
-        "title": "Github Desktop",
-        "description": "More productive, fast and easy to use",
-        "path": "https://github.com/lokeshkavisth"
-      },
-      {
-        "id": 7,
-        "title": "Lighthouse",
-        "description": "Check performance, quality, and correctness of web apps",
-        "path": "https://github.com/lokeshkavisth"
-      },
-      {
-        "id": 8,
-        "title": "Vercel",
-        "description": "Hosting for my personal website and projects",
-        "path": "https://github.com/lokeshkavisth"
-      }
-    ],
-    [
-      {
-        "id": 1,
-        "title": "Acer Nitro VG240YS",
-        "description": "Incredible monitor with 164hz refresh rate",
-        "path": "https://github.com/lokeshkavisth"
-      },
-      {
-        "id": 2,
-        "title": "Redragon Kumara K552 Rainbow",
-        "description": "Budget friendly TKL keyboard with red switches",
-        "path": "https://github.com/lokeshkavisth"
-      },
-      {
-        "id": 3,
-        "title": "Redgear A-15",
-        "description": "A powerful, customisable mouse for creatives",
-        "path": "https://github.com/lokeshkavisth"
-      }
-    ],
-    [
-      {
-        "id": 1,
-        "title": "Poco X3 Pro",
-        "description": "database description",
-        "path": "https://github.com/lokeshkavisth"
-      },
-      {
-        "id": 2,
-        "title": "PTron Earphones",
-        "description": "database description",
-        "path": "https://github.com/lokeshkavisth"
-      }
-    ]
-  ]
-]
+  }
+}
