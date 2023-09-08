@@ -1,9 +1,7 @@
 "use client";
+
 import React from "react";
-import data from "../../data/data.json";
-import dummy from "../../assets/images/Logo 500x500 px (1).jpeg";
-import CardOne from "@/components/ui/cards/CardOne";
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import { languages } from "../../data/data.json";
 import html from "../../assets/images/html.svg";
 import css from "../../assets/images/css.svg";
 import javascript from "../../assets/images/javascript.png";
@@ -19,10 +17,11 @@ import mysql from "../../assets/images/mysql.svg";
 import mongodb from "../../assets/images/mongodb.png";
 import jquery from "../../assets/images/jquery.png";
 import express from "../../assets/images/express.png";
+import Image from "next/image";
 
 const Stack = () => {
-  const skillsLogo = [
-    [
+  const skillsLogo = {
+    frontend: [
       html,
       css,
       javascript,
@@ -35,46 +34,45 @@ const Stack = () => {
       redux,
       jquery,
     ],
-    [nodejs, express],
-    [mysql, mongodb],
-  ];
+    backend: [nodejs, express],
+    database: [mysql, mongodb],
+  };
 
-  const frontendSkills = data[3][0].map(({ id, title, description }, index) => (
-    <li key={id}>
-      <CardOne
-        src={skillsLogo[0][index]}
-        title={title}
-        description={description}
+  const imgClass =
+    "border border-black_02 bg-black_04 p-2 rounded-md hover:bg-black_02 hover:bg-opacity-50 transition-all aspect-square object-cover";
+  const containerClass = "flex items-center gap-2 flex-wrap w-full";
+
+  const frontendSkills = languages.frontend.map(({ id, title }, index) => (
+    <li key={id} className="">
+      <Image
+        src={skillsLogo.frontend[index]}
+        alt={title}
         width={50}
         height={50}
-        cardClass={"flex-col"}
-        cardImgClass={"border border-black_02 bg-black_04 p-2"}
+        className={imgClass}
       />
     </li>
   ));
-  const backendSkills = data[3][1].map(({ id, title, description }, index) => (
+
+  const backendSkills = languages.backend.map(({ id, title }, index) => (
     <li key={id}>
-      <CardOne
-        src={skillsLogo[1][index]}
-        title={title}
-        description={description}
+      <Image
+        src={skillsLogo.backend[index]}
+        alt={title}
         width={50}
         height={50}
-        cardClass={"flex-col"}
-        cardImgClass={"border border-black_02 bg-black_04 p-2"}
+        className={imgClass}
       />
     </li>
   ));
-  const databaseSkills = data[3][2].map(({ id, title, description }, index) => (
+  const databaseSkills = languages.database.map(({ id, title }, index) => (
     <li key={id}>
-      <CardOne
-        src={skillsLogo[2][index]}
-        title={title}
-        description={description}
+      <Image
+        src={skillsLogo.database[index]}
+        alt={title}
         width={50}
         height={50}
-        cardClass={"flex-col"}
-        cardImgClass={"border border-black_02 bg-black_04 p-2"}
+        className={imgClass}
       />
     </li>
   ));
@@ -92,6 +90,7 @@ const Stack = () => {
 
       <section className="space-y-20">
         {/* Frontend skills */}
+
         <div className="space-y-10">
           <div>
             <h2 className="text-xl mb-3">Frontend</h2>
@@ -102,13 +101,7 @@ const Stack = () => {
           </div>
 
           <div>
-            <ul>
-              <ResponsiveMasonry>
-                <Masonry columnsCount={3} gutter={"10px"}>
-                  {frontendSkills}
-                </Masonry>
-              </ResponsiveMasonry>
-            </ul>
+            <ul className={containerClass}>{frontendSkills}</ul>
           </div>
         </div>
 
@@ -122,13 +115,7 @@ const Stack = () => {
             </p>
           </div>
           <div>
-            <ul>
-              <ResponsiveMasonry>
-                <Masonry columnsCount={3} gutter={"10px"}>
-                  {backendSkills}
-                </Masonry>
-              </ResponsiveMasonry>
-            </ul>
+            <ul className={containerClass}>{backendSkills}</ul>
           </div>
         </div>
 
@@ -142,13 +129,7 @@ const Stack = () => {
             </p>
           </div>
           <div>
-            <ul>
-              <ResponsiveMasonry>
-                <Masonry columnsCount={3} gutter={"10px"}>
-                  {databaseSkills}
-                </Masonry>
-              </ResponsiveMasonry>
-            </ul>
+            <ul className={containerClass}>{databaseSkills}</ul>
           </div>
         </div>
       </section>

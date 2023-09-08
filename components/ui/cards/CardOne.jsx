@@ -18,8 +18,8 @@ const CardOne = ({
         <Image
           src={src}
           alt={title}
-          width={!width ? 250 : width}
-          height={!height ? 250 : height}
+          width={width || 250 }
+          height={height || 250 }
           className={`aspect-square object-cover rounded-md ${cardImgClass}`}
         />
       </div>
