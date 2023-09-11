@@ -1,23 +1,25 @@
 "use client";
-
 import React from "react";
-import { languages } from "../../data/data.json";
-import html from "../../assets/images/html.svg";
-import css from "../../assets/images/css.svg";
-import javascript from "../../assets/images/javascript.png";
-import mui from "../../assets/images/mui.png";
-import react from "../../assets/images/react.svg";
-import tailwind from "../../assets/images/Tailwind.png";
-import bootstrap from "../../assets/images/Bootstrap.png";
-import sass from "../../assets/images/sass.svg";
-import less from "../../assets/images/less.svg";
-import redux from "../../assets/images/redux.png";
-import nodejs from "../../assets/images/nodeJs.svg";
-import mysql from "../../assets/images/mysql.svg";
-import mongodb from "../../assets/images/mongodb.png";
-import jquery from "../../assets/images/jquery.png";
-import express from "../../assets/images/express.png";
 import Image from "next/image";
+import { languages } from "@/data/data";
+import html from "@/assets/images/html.svg";
+import css from "@/assets/images/css.svg";
+import javascript from "@/assets/images/javascript.png";
+import mui from "@/assets/images/mui.png";
+import react from "@/assets/images/react.svg";
+import tailwind from "@/assets/images/Tailwind.png";
+import bootstrap from "@/assets/images/Bootstrap.png";
+import sass from "@/assets/images/sass.svg";
+import less from "@/assets/images/less.svg";
+import redux from "@/assets/images/redux.png";
+import nodejs from "@/assets/images/nodeJs.svg";
+import mysql from "@/assets/images/mysql.svg";
+import mongodb from "@/assets/images/mongodb.png";
+import jquery from "@/assets/images/jquery.png";
+import express from "@/assets/images/express.png";
+import git from "@/assets/images/git.png";
+import npm from "@/assets/images/npm.png";
+import yarn from "@/assets/images/yarn.png";
 
 const Stack = () => {
   const skillsLogo = {
@@ -36,6 +38,7 @@ const Stack = () => {
     ],
     backend: [nodejs, express],
     database: [mysql, mongodb],
+    devlopment: [git, npm, yarn],
   };
 
   const imgClass =
@@ -77,6 +80,20 @@ const Stack = () => {
     </li>
   ));
 
+  const developmentSkills = languages.development_tools.map(
+    ({ id, title }, index) => (
+      <li key={id}>
+        <Image
+          src={skillsLogo.devlopment[index]}
+          alt={title}
+          width={50}
+          height={50}
+          className={imgClass}
+        />
+      </li>
+    )
+  );
+
   return (
     <div>
       <div className="space-y-6">
@@ -95,8 +112,8 @@ const Stack = () => {
           <div>
             <h2 className="text-xl mb-3">Frontend</h2>
             <p>
-              Some of the apps & services I use to get work done and keep track
-              of my personal life
+              I leverage a diverse array of frontend technologies to craft and
+              develop my frontend projects.
             </p>
           </div>
 
@@ -110,8 +127,8 @@ const Stack = () => {
           <div>
             <h2 className="text-xl mb-3">Backend</h2>
             <p>
-              Some of the apps & services I use to get work done and keep track
-              of my personal life
+              I harness a wide range of backend technologies to architect and
+              build my backend projects.
             </p>
           </div>
           <div>
@@ -124,12 +141,26 @@ const Stack = () => {
           <div>
             <h2 className="text-xl mb-3">Database</h2>
             <p>
-              Some of the apps & services I use to get work done and keep track
-              of my personal life
+              I employ a diverse set of database technologies to design and
+              manage the databases for my projects.
             </p>
           </div>
           <div>
             <ul className={containerClass}>{databaseSkills}</ul>
+          </div>
+        </div>
+
+        {/* Devlopment skills */}
+        <div className="space-y-10">
+          <div>
+            <h2 className="text-xl mb-3">Development Tools</h2>
+            <p>
+              I utilize a comprehensive suite of development tools to streamline
+              and enhance the development process for my projects.
+            </p>
+          </div>
+          <div>
+            <ul className={containerClass}>{developmentSkills}</ul>
           </div>
         </div>
       </section>
