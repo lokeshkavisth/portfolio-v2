@@ -1,9 +1,23 @@
-import Image from "next/image";
 import React from "react";
-import profile from "../../assets/images/profile (1).jpeg";
+import Image from "next/image";
 import Link from "next/link";
+import profile from "@/assets/images/profile.jpeg";
+import { education } from "@/data/data";
 
 const About = () => {
+  const Education = education.reverse().map(({ id, name, time, level }) => (
+    <li
+      key={id}
+      className="flex flex-col md:flex-row md:items-center justify-between gap-2"
+    >
+      <h4 className="text-my_white">{name}</h4>
+      <div className="flex flex-wrap items-center gap-5 opacity-50 capitalize">
+        <p>{level}</p>
+        <span>{time}</span>
+      </div>
+    </li>
+  ));
+
   return (
     <section>
       <div className="space-y-10">
@@ -17,84 +31,63 @@ const About = () => {
 
         <div className="space-y-8">
           <p>
-            I’m Lokesh Sharma a India based full stack web developer with over
-            one year of experience. I am proficient in JavaScript, React,
-            Node.js, MongoDB and Other web development languages and
-            technologies.
-          </p>
-          <p>
-            I’m currently working at WP Engine where I design some of the worlds
-            best WordPress products including Advanced Custom Fields, WP Migrate
-            and WP Offload Media.
-          </p>
-          <p>
-            Before WP Engine I worked at BaseKit where I designed web
-            applications like the worlds first fully functional mobile website
-            builder, a commerce platform, dashboard, mobile application, and an
-            online booking system.
-          </p>
-          <p>
-            Before BaseKit I spent some time working for web agencies designing
-            everything from one-page websites to native mobile applications.
-            Over the years I’ve been lucky enough to work with companies like
-            Nationwide, BP, Telefónica, Apple & Amazon.
-          </p>
-          <p>
-            You can also find me working on my own projects:{" "}
+            👋 Hello, I&rsquo;m Lokesh Sharma, a 22-year-old Full Stack Web
+            Developer based in the vibrant city of{" "}
             <Link
-              href={"/projects"}
+              href={
+                "https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852108,75.7905578,11z/data=!4m15!1m8!3m7!1s0x396c4adf4c57e281:0xce1c63a0cf22e09!2sJaipur,+Rajasthan!3b1!8m2!3d26.9124336!4d75.7872709!16zL20vMDE2NzIy!3m5!1s0x396c4adf4c57e281:0xce1c63a0cf22e09!8m2!3d26.9124336!4d75.7872709!16zL20vMDE2NzIy?entry=ttu"
+              }
+              target="_blank"
               className="border-b-4 border-b-white_02 text-white_01"
             >
-              Flashcard Generator
+              Jaipur
             </Link>
-            , web application that allows users to create, manage, and share
-            custom flashcards, It provides an intuitive interface and a
-            comprehensive set of features to enhance the learning process. and{" "}
+            , Rajasthan, India. I graduated with a Bachelor&rsquo;s degree in
+            Arts from{" "}
             <Link
-              href={"/stack"}
+              href={
+                "https://www.google.com/maps/place/S.S.+Jain+Subodh+P.G.+(Autonomous)+College/@26.8957564,75.8071365,17z/data=!3m1!4b1!4m6!3m5!1s0x396db69f09ad2969:0xbfc70c460c87c200!8m2!3d26.8957516!4d75.8097114!16s%2Fm%2F0cc6cvf?entry=ttu"
+              }
+              target="_blank"
               className="border-b-4 border-b-white_02 text-white_01"
             >
-              Resume Builder
+              SS Jain Subodh PG College
             </Link>
-            , an porfessional resume builder web app where you choose from a
-            variety of customizable templates and create a professional-looking
-            resume that stands out to potential employers.
+            , Jaipur, in 2021, and since then, I&rsquo;ve been on an exciting
+            journey in the world of web development.
+          </p>
+          <p>
+            🚀 My passion for coding ignited in 2021, and I swiftly delved into
+            the realm of web development. Today, I specialize in the MERN
+            (MongoDB, Express.js, React, Node.js) stack, harnessing its power to
+            craft immersive web experiences and dynamic applications.
+          </p>
+          <p>
+            🧠 I take pride in being a quick learner, always eager to stay on
+            the cutting edge of technology. Beyond coding, I nurture a love for
+            knowledge by reading and writing tech articles, sharing insights,
+            and contributing to the tech community.
+          </p>
+          <p>
+            📧 Let&rsquo;s connect! Feel free to reach out to me at{" "}
+            <Link
+              href={"mailto:lokeshkavisth.dev@gmail.com"}
+              target="_blank"
+              className="border-b-4 border-b-white_02 text-white_01"
+            >
+              Email
+            </Link>{" "}
+            for inquiries, opportunities, or just to chat about all things tech.
           </p>
         </div>
       </div>
 
-      {/* work section  */}
+      <hr />
 
-      {/* <hr /> */}
-
-      {/* <div>
-        <h2 className="text-xl mb-3">Work</h2>
-        <ul className="space-y-5">
-          <li className="flex items-center justify-between gap-2 [&>h4]:hover:text-purple-500">
-            <h4 className="text-my_white">WP Engine / Delicious Brains</h4>
-            <div className="flex items-center gap-5 opacity-50">
-              <p>Senior Product Designer</p>
-              <span>2010-2013</span>
-            </div>
-          </li>
-
-          <li className="flex items-center justify-between gap-2 [&>h4]:hover:text-purple-500">
-            <h4 className="text-my_white">WP Engine / Delicious Brains</h4>
-            <div className="flex items-center gap-5 opacity-50">
-              <p>Senior Product Designer</p>
-              <span>2010-2013</span>
-            </div>
-          </li>
-
-          <li className="flex items-center justify-between gap-2 [&>h4]:hover:text-purple-500">
-            <h4 className="text-my_white">WP Engine / Delicious Brains</h4>
-            <div className="flex items-center gap-5 opacity-50">
-              <p>Senior Product Designer</p>
-              <span>2010-2013</span>
-            </div>
-          </li>
-        </ul>
-      </div> */}
+      <div>
+        <h2 className="text-xl mb-3">Education</h2>
+        <ul className="space-y-5">{Education}</ul>
+      </div>
     </section>
   );
 };

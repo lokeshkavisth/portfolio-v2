@@ -25,14 +25,8 @@
     {
       "id": 1,
       "title": "Flashcard Generator",
-      "description": "A curated library of screenshots & interaction patterns from the world&rsquo;s best digital products. Gain insights, explore trends and understand competitors and best practices.",
+      "description": "A web application that allows users to create, manage, and share custom flashcards. It provides an intuitive interface and a comprehensive set of features to enhance the learning process.",
       "path": "https://generator-flashcard.vercel.app/"
-    },
-    {
-      "id": 2,
-      "title": "Design Wallet",
-      "description": "A curated library of screenshots & interaction patterns from the world&rsquo;s best digital products. Gain insights, explore trends and understand competitors and best practices.",
-      "path": "https://github.com/lokeshkavisth"
     }
   ],
   "projects_data": [
@@ -40,24 +34,28 @@
       "id": 1,
       "title": "Flashcard Generator",
       "description": "Flashcard Generator is a web application that allows users to create, manage, and share custom flashcards. It provides an intuitive interface and a comprehensive set of features to enhance the learning process.",
+      "stack": ["React.js", "TailwindCSS", "Redux", "Formik", "Yup"],
       "path": "https://flashcard-generator-alma.vercel.app/"
     },
     {
       "id": 2,
       "title": "Resume Builder",
       "description": "A porfessional resume builder web app where you choose from a variety of customizable templates and create a professional-looking resume that stands out to potential employers.",
+      "stack": ["React.js", "Node.js", "TailwindCSS", "Redux"],
       "path": "https://resume-builder-almabetter.vercel.app/"
     },
     {
       "id": 3,
       "title": "Todo",
       "description": "A TODO app that used redux, tailwind and ReactJs.",
+      "stack": ["React.js", "Node.js", "TailwindCSS", "Redux"],
       "path": "https://almabetter-todo-app.vercel.app/"
     },
     {
       "id": 4,
       "title": "BendyBorder",
       "description": "A visual generator to build organic looking shapes with the help of CSS3 border-radius property.",
+      "stack": ["React.js", "Node.js", "TailwindCSS", "Redux"],
       "path": "https://bendyborder.vercel.app/"
     }
   ],
@@ -128,6 +126,46 @@
         "id": 2,
         "title": "MongoDB"
       }
+    ],
+    "development_tools": [
+      {
+        "id": 1,
+        "title": "Git"
+      },
+      {
+        "id": 2,
+        "title": "Npm"
+      },
+      {
+        "id": 3,
+        "title": "Yarn"
+      }
     ]
-  }
+  },
+  "education": [
+    {
+      "id": 1,
+      "name": "Rahul Chetna Public Sr. Sec. School, Jaipur ( RBSE )",
+      "time": "august 2014 - july 2015",
+      "level": "10th"
+    },
+    {
+      "id": 2,
+      "name": "Rahul Chetna Public Sr. Sec. School, Jaipur ( RBSE )",
+      "time": "august 2016 - july 2017",
+      "level": "12th"
+    },
+    {
+      "id": 3,
+      "name": "SS Jain Subodh P.G Autonomous College, Jaipur",
+      "time": "may 2018 - august 2021",
+      "level": "graduate ( BA )"
+    },
+    {
+      "id": 4,
+      "name": "AlmaBetter Institute",
+      "time": "febaury 2023 - august 2023",
+      "level": "Full stack web development ( MERN )"
+    }
+  ]
 }

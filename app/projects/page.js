@@ -1,25 +1,24 @@
 "use client";
-import React, { Suspense } from "react";
-import { projects_data } from "../../data/data.json";
-import dummy from "../../assets/images/Logo 500x500 px (1).jpeg";
+import React from "react";
+import { projects_data } from "@/data/data";
 import Button from "@/components/ui/buttons/Button";
 import CardOne from "@/components/ui/cards/CardOne";
-// import { HiArrowUpRight } from "react-icons/hi";
-import flashcard from "../../assets/images/flashcard.png";
-import todo from "../../assets/images/todo.png";
-import bendy_border from "../../assets/images/bendy_border.png";
-import resume_builder from "../../assets/images/resume_builder.png";
+import flashcard from "@/assets/images/flashcard.png";
+import todo from "@/assets/images/todo.png";
+import bendy_border from "@/assets/images/bendy_border.png";
+import resume_builder from "@/assets/images/resume_builder.png";
 
 const Projects = () => {
   const projectImages = [flashcard, resume_builder, todo, bendy_border];
 
   const myProjects = projects_data?.map(
-    ({ id, title, description, path }, index) => (
+    ({ id, title, description, stack, path }, index) => (
       <li key={id} className="relative">
         <CardOne
           src={projectImages[index]}
           title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}
           description={description}
+          stack={stack}
           width={"auto"}
           height={"auto"}
           cardClass={"flex flex-col pb-24 gap-10"}
@@ -35,12 +34,12 @@ const Projects = () => {
   return (
     <div>
       <div className="space-y-6">
-        <h1 className="text-5xl">Project</h1>
-
+        <h1 className="text-5xl capitalize">Projects</h1>
         <p>
-          From one page sites to the worlds first mobile sitebuilder, I’ve spent
-          years designing and building products of varying sizes. Here’s a small
-          selection of some of my recent projects and experiences.
+          As a dedicated MERN stack developer, I&rsquo;ve had the privilege of
+          working on a diverse range of projects, from dynamic web applications
+          to scalable back-end systems. Below, you&rsquo;ll find a selection of
+          some of my recent projects.
         </p>
       </div>
       <hr />
