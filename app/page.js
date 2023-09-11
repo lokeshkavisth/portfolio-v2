@@ -1,12 +1,11 @@
+import Link from "next/link";
 import { VscTwitter, VscGithubInverted } from "react-icons/vsc";
 import { FaLinkedinIn } from "react-icons/fa";
-import Link from "next/link";
-import Button from "@/components/ui/buttons/Button";
-import divider from "../assets/divider.svg";
-// import Image from "next/image";
 import img1 from "@/assets/images/flashcard.png";
-import { featured } from "../data/data.json";
+import { featured } from "@/data/data.json";
 import CardOne from "@/components/ui/cards/CardOne";
+import Button from "@/components/ui/buttons/Button";
+import PageHead from "@/components/common/PageHead";
 
 const socialHome = [
   {
@@ -46,6 +45,15 @@ export default function Home() {
 
   return (
     <section className="space-y-8">
+      <PageHead
+        title={
+          "Passionate MERN Stack Web Developer | Lokesh Sharma - Jaipur, India"
+        }
+        description={
+          "Passionate MERN Stack Web Developer based in Jaipur, India. Explore my portfolio and tech articles. Let's connect for web development opportunities."
+        }
+      />
+
       <h1 className="text-4xl sm:text-5xl leading-snug pb-16">
         Passionate MERN Stack Web Developer and Tech Enthusiast.
       </h1>
