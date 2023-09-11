@@ -1,6 +1,6 @@
-import CardSkeleton from "@/components/ui/skeletons/CardSkeleton";
 import React from "react";
-import { projects_data } from "../../data/data.json";
+import CardSkeleton from "@/components/ui/skeletons/CardSkeleton";
+import { projects_data } from "@/data/data";
 
 const Loading = () => {
   const loader = projects_data.map((e) => <CardSkeleton key={e.id} />);

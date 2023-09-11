@@ -1,7 +1,7 @@
 "use client";
-import Navbar from "@/components/ui/navigation/Navbar";
-import "./globals.css";
 import { useEffect } from "react";
+import Navbar from "@/components/ui/navigation/Navbar";
+import "@/app/globals.css";
 
 export const metadata = {
   title: "Portfolio-V2",
@@ -35,10 +35,10 @@ export default function RootLayout({ children }) {
     };
   }, []);
   return (
-    <html lang="en">
-      <body className="bg-black_01 text-white_02 font-JetBrains">
+    <html lang="en" className="overflow-x-hidden">
+      <body className="bg-black_01 text-white_02 font-JetBrains overflow-x-hidden">
         <Navbar />
-        <main className="max-w-screen-lg mx-auto py-20  text-sm px-4">
+        <main className="max-w-screen-lg mx-auto py-40  text-sm px-4">
           {children}
         </main>
       </body>
