@@ -43,7 +43,7 @@ const toggleSidebar = () => {
               <VscMenu onClick={toggleSidebar}/>
               </i>
             </div>
-            <nav className="absolute top-[72px] -right-80 z-40 h-screen w-full max-w-[200px] bg-white_03 md:static md:w-auto md:max-w-full md:h-auto md:top-auto md:right-auto md:bg-inherit transition-all" id="navbar">
+            <nav className="absolute top-[72px] -right-80 z-40 h-screen w-full max-w-[200px] bg-black_03 md:static md:w-auto md:max-w-full md:h-auto md:top-auto md:right-auto md:bg-inherit transition-all" id="navbar">
           <ul className="flex flex-col items-center md:gap-1 md:flex-row gap-6 mt-10 md:mt-0">{navMenu}</ul>
         </nav>
           </div>        
