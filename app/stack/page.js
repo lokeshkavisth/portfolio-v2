@@ -21,6 +21,11 @@ import git from "@/assets/images/git.png";
 import npm from "@/assets/images/npm.png";
 import yarn from "@/assets/images/yarn.png";
 
+export const metadata = {
+  title: "Lokesh Sharma - Stack Page",
+  description: "",
+};
+
 const Stack = () => {
   const skillsLogo = {
     frontend: [
@@ -100,7 +105,7 @@ const Stack = () => {
         <h1 className="text-5xl">Skills</h1>
         <p>
           Unleashing Innovation with Cutting-Edge Tools: Exploring the Depths of
-          my Tech Stack Expertise
+          my Tech Stack Expertise.
         </p>
       </div>
       <hr />

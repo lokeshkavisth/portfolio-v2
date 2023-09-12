@@ -4,6 +4,11 @@ import Link from "next/link";
 import profile from "@/assets/images/profile.jpeg";
 import { education } from "@/data/data";
 
+export const metadata = {
+  title: "Lokesh Sharma - About Page",
+  description: "",
+};
+
 const About = () => {
   const Education = education.reverse().map(({ id, name, time, level }) => (
     <li

@@ -8,6 +8,11 @@ import todo from "@/assets/images/todo.png";
 import bendy_border from "@/assets/images/bendy_border.png";
 import resume_builder from "@/assets/images/resume_builder.png";
 
+export const metadata = {
+  title: "Lokesh Sharma - Projects Page",
+  description: "",
+};
+
 const Projects = () => {
   const projectImages = [flashcard, resume_builder, todo, bendy_border];
 
