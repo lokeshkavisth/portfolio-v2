@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-![GitHub last commit](https://img.shields.io/github/last-commit/lokeshkavisth/portfolio-v2) ![GitHub](https://img.shields.io/github/license/lokeshkavisth/portfolio-v2) ![Vercel](https://vercelbadge.vercel.app/api/lokeshkavisth/lokeshkavisth.vercel.app)
+![GitHub last commit](https://img.shields.io/github/last-commit/lokeshkavisth/portfolio-v2) ![GitHub](https://img.shields.io/github/license/lokeshkavisth/portfolio-v2) ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=lokeshkavisth)
 
 Welcome to my personal portfolio website built with Next.js, Tailwind CSS, and other technologies. You can view the live website here: [https://lokeshkavisth.vercel.app/](https://lokeshkavisth.vercel.app/)
 
