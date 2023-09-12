@@ -3,11 +3,11 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {VscMenu} from 'react-icons/vsc'
-import {nav_data} from "@/data/data.json";
+import data from "@/data/data.json";
 
 const Navbar = () => {
   const currentPath = usePathname();
-  const navMenu = nav_data.map(({ id, title, path }) => (
+  const navMenu = data.nav_data.map(({ id, title, path }) => (
     <li key={id}>
       <Link
         href={path}

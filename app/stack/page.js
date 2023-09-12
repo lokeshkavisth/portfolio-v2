@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { languages } from "@/data/data";
+import data from "@/data/data.json";
 import html from "@/assets/images/html.svg";
 import css from "@/assets/images/css.svg";
 import javascript from "@/assets/images/javascript.png";
@@ -48,6 +48,8 @@ const Stack = () => {
   const imgClass =
     "border border-black_02 bg-black_04 p-2 rounded-md hover:bg-black_02 hover:bg-opacity-50 transition-all aspect-square object-cover";
   const containerClass = "flex items-center gap-2 flex-wrap w-full";
+
+  const { languages } = data;
 
   const frontendSkills = languages.frontend.map(({ id, title }, index) => (
     <li key={id} className="">

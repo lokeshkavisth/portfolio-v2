@@ -1,5 +1,5 @@
 import React from "react";
-import { projects_data } from "@/data/data";
+import data from "@/data/data.json";
 import Button from "@/components/ui/buttons/Button";
 import CardOne from "@/components/ui/cards/CardOne";
 import flashcard from "@/assets/images/flashcard.png";
@@ -14,6 +14,8 @@ export const metadata = {
 
 const Projects = () => {
   const projectImages = [flashcard, resume_builder, todo, bendy_border];
+
+  const { projects_data } = data;
 
   const myProjects = projects_data?.map(
     ({ id, title, description, stack, path }, index) => (

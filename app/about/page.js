@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import profile from "@/assets/images/profile.jpeg";
-import { education } from "@/data/data";
+import data from "@/data/data.json";
 
 export const metadata = {
   title: "Lokesh Sharma - About Page",
@@ -10,6 +10,7 @@ export const metadata = {
 };
 
 const About = () => {
+  const { education } = data;
   const Education = education.reverse().map(({ id, name, time, level }) => (
     <li
       key={id}
