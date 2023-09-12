@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import { projects_data } from "@/data/data";
 import Button from "@/components/ui/buttons/Button";
