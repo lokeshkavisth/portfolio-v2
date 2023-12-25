@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 
 const Cursor = () => {
@@ -47,36 +47,26 @@ const Cursor = () => {
     };
   }, []);
 
-  const isCursorVisible = window.innerWidth > 800;
-
   return (
-    isCursorVisible && (
-      <div className="cursor pointer-events-none">
-        <div className="cursor__ball cursor__ball--big  top-0 left-0 z-50 mix-blend-difference absolute">
-          <svg>
-            <circle
-              cx="17"
-              cy="17"
-              r="13"
-              stroke-width="0"
-              fill="#eaeaea"
-            ></circle>
-          </svg>
-        </div>
-
-        <div className="cursor__ball cursor__ball--small  top-0 left-0 z-50 mix-blend-difference absolute">
-          <svg>
-            <circle
-              cx="5"
-              cy="5"
-              r="4"
-              stroke-width="0"
-              fill="#b1b1b1"
-            ></circle>
-          </svg>
-        </div>
+    <div className="cursor pointer-events-none hidden md:block">
+      <div className="cursor__ball cursor__ball--big  top-0 left-0 z-50 mix-blend-difference absolute">
+        <svg>
+          <circle
+            cx="17"
+            cy="17"
+            r="13"
+            strokeWidth="0"
+            fill="#eaeaea"
+          ></circle>
+        </svg>
       </div>
-    )
+
+      <div className="cursor__ball cursor__ball--small  top-0 left-0 z-50 mix-blend-difference absolute">
+        <svg>
+          <circle cx="5" cy="5" r="4" strokeWidth="0" fill="#b1b1b1"></circle>
+        </svg>
+      </div>
+    </div>
   );
 };
 
