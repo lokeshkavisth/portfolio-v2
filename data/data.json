@@ -25,7 +25,7 @@
     {
       "id": 1,
       "title": "Flashcard Generator",
-      "description": "A web application that allows users to create, manage, and share custom flashcards. It provides an intuitive interface and a comprehensive set of features to enhance the learning process.",
+      "description": "A web application that enables users to create, manage, and share personalized flashcards. It has an easy-to-use interface and a comprehensive set of features to help with learning.",
       "path": "https://generator-flashcard.vercel.app/"
     }
   ],
@@ -145,27 +145,21 @@
   "education": [
     {
       "id": 1,
-      "name": "Rahul Chetna Public Sr. Sec. School, Jaipur ( RBSE )",
-      "time": "august 2014 - july 2015",
-      "level": "10th"
+      "name": "AlmaBetter Institute",
+      "time": "febaury 2023 - august 2023",
+      "level": "MERN Stack"
     },
     {
       "id": 2,
-      "name": "Rahul Chetna Public Sr. Sec. School, Jaipur ( RBSE )",
-      "time": "august 2016 - july 2017",
-      "level": "12th"
-    },
-    {
-      "id": 3,
       "name": "SS Jain Subodh P.G Autonomous College, Jaipur",
       "time": "may 2018 - august 2021",
       "level": "graduate ( BA )"
     },
     {
-      "id": 4,
-      "name": "AlmaBetter Institute",
-      "time": "febaury 2023 - august 2023",
-      "level": "Full stack web development ( MERN )"
+      "id": 3,
+      "name": "Rahul Chetna Public Sr. Sec. School, Jaipur ( RBSE )",
+      "time": "august 2016 - july 2017",
+      "level": "12th"
     }
   ]
 }

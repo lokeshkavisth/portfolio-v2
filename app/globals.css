@@ -4,6 +4,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap");
 
+@font-face {
+  font-family: "Roobert, sans";
+  src: url(../assets/fonts/Roobert-Regular.ttf);
+}
+
 h1,
 h2,
 h3 {
@@ -11,8 +16,16 @@ h3 {
   font-weight: bold;
 }
 
-p {
-  line-height: 2;
+@layer base {
+  p {
+    @apply text-base leading-7;
+  }
+  h1 {
+    @apply !leading-snug;
+  }
+  h4 {
+    @apply text-lg;
+  }
 }
 
 hr {

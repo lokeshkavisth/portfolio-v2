@@ -11,15 +11,15 @@ export const metadata = {
 
 const About = () => {
   const { education } = data;
-  const Education = education.reverse().map(({ id, name, time, level }) => (
+  const Education = education.map(({ id, name, time, level }) => (
     <li
       key={id}
-      className="flex flex-col md:flex-row md:items-center justify-between gap-2"
+      className="flex flex-col md:flex-row md:items-center justify-between"
     >
       <h4 className="text-my_white">{name}</h4>
-      <div className="flex flex-wrap items-center gap-5 opacity-50 capitalize">
+      <div className="flex flex-wrap items-center gap-3 opacity-50 capitalize">
         <p>{level}</p>
-        <span>{time}</span>
+        <span>({time})</span>
       </div>
     </li>
   ));
@@ -57,10 +57,10 @@ const About = () => {
               target="_blank"
               className="border-b-4 border-b-white_02 text-white_01"
             >
-              SS Jain Subodh PG College
+              SS Jain Subodh PG College, Jaipur
             </Link>
-            , Jaipur, in 2021, and since then, I&rsquo;ve been on an exciting
-            journey in the world of web development.
+            , in 2021, and since then, I&rsquo;ve been on an exciting journey in
+            the world of web development.
           </p>
           <p>
             🚀 My passion for coding ignited in 2021, and I swiftly delved into
