@@ -7,7 +7,7 @@ import data from "@/data/data.json";
 
 const Navbar = () => {
   const currentPath = usePathname();
-  const navMenu = data.nav_data.map(({ id, title, path }) => (
+  const navMenu = data.nav.map(({ id, title, path }) => (
     <li key={id}>
       <Link
         href={path}

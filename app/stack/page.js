@@ -21,8 +21,9 @@ import npm from "@/assets/images/npm.png";
 import yarn from "@/assets/images/yarn.png";
 
 export const metadata = {
-  title: "Lokesh Sharma - Stack Page",
-  description: "",
+  title: "Lokesh Sharma's Tech Stack",
+  description:
+    "Delve into my arsenal of web development tools and technologies. Discover my expert-level proficiency in MERN stack, alongside a diverse range of skills in other languages and frameworks. Explore my passion for continuous learning and innovation within the web development landscape.",
 };
 
 const Stack = () => {

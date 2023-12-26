@@ -5,19 +5,20 @@ import CardOne from "@/components/ui/CardOne";
 import flashcard from "@/assets/images/flashcard.png";
 import todo from "@/assets/images/todo.png";
 import bendy_border from "@/assets/images/bendy_border.png";
-import resume_builder from "@/assets/images/resume_builder.png";
+import piksabe from "@/assets/images/piksabe.png";
 
 export const metadata = {
-  title: "Lokesh Sharma - Projects Page",
-  description: "",
+  title: "Lokesh Sharma's Projects",
+  description:
+    "Witness the power of MERN stack in action! Explore a diverse collection of my most innovative projects, showcasing cutting-edge web applications, scalable back-end systems, and creative problem-solving skills. Dive into the technologies and techniques used to bring these projects to life.",
 };
 
 const Projects = () => {
-  const projectImages = [flashcard, resume_builder, todo, bendy_border];
+  const projectImages = [flashcard, piksabe, todo, bendy_border];
 
-  const { projects_data } = data;
+  const { projects } = data;
 
-  const myProjects = projects_data?.map(
+  const myProjects = projects?.map(
     ({ id, title, description, stack, path }, index) => (
       <li key={id} className="relative">
         <CardOne

@@ -4,29 +4,30 @@ import Cursor from "@/components/ui/Cursor";
 
 export const metadata = {
   title: {
-    default: "Lokesh Sharma | Full Stack Web Developer",
-    template: "%s",
+    default: "Lokesh Sharma | MERN Stack Developer",
+    template: "%s | MERN Stack Developer",
   },
   description:
-    "I'm Lokesh-Sharma, a full-stack web developer living in Jaipur, India. As a developer, I am proficient in MERN Stack technologies like MongoDB, Express.js, React.js, Node.js and web development languages and technologies.",
+    "Crafting exceptional web experiences with MERN Stack in Jaipur, India. Focused on projects that push boundaries and deliver real-world impact.",
   keywords: [
-    "full-stack web developer",
-    "MERN Stack",
+    "MERN Stack Developer",
+    "Full Stack Web Developer",
     "MongoDB",
     "Express.js",
     "React.js",
     "Node.js",
     "JavaScript",
-    "Lokesh Sharma",
+    "Jaipur",
+    "India",
   ],
   image: "../assets/images/profile.jpeg",
   og: {
-    title: "Lokesh Sharma | Full Stack Web Developer",
+    title: "Lokesh Sharma | MERN Stack Developer",
     description:
-      "I'm Lokesh-Sharma, a full-stack web developer living in Jaipur, India. As a developer, I am proficient in MERN Stack technologies like MongoDB, Express.js, React.js, Node.js and web development languages and technologies.",
+      "Creating innovative web solutions with MERN Stack. Based in Jaipur, India.",
     image: "../assets/images/profile.jpeg",
     url: "https://lokeshkavisth.vercel.app/",
-    type: "website",
+    type: "profile",
     site_name: "Lokesh Sharma",
     locale: "en-US",
     author: "Lokesh Sharma",
@@ -34,12 +35,11 @@ export const metadata = {
     dateModified: "2023-09-11",
     robots: "index,follow",
     canonical: "https://lokeshkavisth.vercel.app",
-    jobTitle: "Full Stack Web Developer",
+    jobTitle: "MERN Stack Developer",
   },
   twitter: {
-    title: "@lokeshkavisth",
-    description:
-      "I'm Lokesh-Sharma, a full-stack web developer living in Jaipur, India. As a developer, I am proficient in MERN Stack technologies like MongoDB, Express.js, React.js, Node.js and web development languages and technologies.",
+    title: "@lokeshkavisth | MERN Stack Developer",
+    description: "Creating exceptional web experiences with MERN Stack.",
     url: "https://lokeshkavisth.vercel.app/",
     image: "../assets/images/profile.jpeg",
   },

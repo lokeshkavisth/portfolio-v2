@@ -5,8 +5,9 @@ import profile from "@/assets/images/profile.jpeg";
 import data from "@/data/data.json";
 
 export const metadata = {
-  title: "Lokesh Sharma - About Page",
-  description: "",
+  title: "About Lokesh Sharma",
+  description:
+    "Explore the story behind my passion for web development and dive into my journey as a MERN stack developer. Learn about my experiences, motivations, and the projects that fuel my drive to create exceptional web experiences.",
 };
 
 const About = () => {

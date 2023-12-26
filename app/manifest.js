@@ -1,9 +1,9 @@
 export default function manifest() {
   return {
-    name: "Lokesh Sharma | Full Stack Web Developer",
-    short_name: "Lokesh Sharma | Full Stack Web Developer",
+    name: "Lokesh Sharma - MERN Stack Developer", // Emphasize MERN expertise
+    short_name: "Lokesh Sharma Dev", // Concise for app icons
     description:
-      "I'm Lokesh-Sharma, a full-stack web developer living in Jaipur, India. As a developer, I am proficient in MERN Stack technologies like MongoDB, Express.js, React.js, Node.js and web development languages and technologies.",
+      "Crafting exceptional web experiences with MERN Stack. Based in Jaipur, India.",
     start_url: "/",
     display: "standalone",
     background_color: "#111111",
@@ -12,28 +12,37 @@ export default function manifest() {
       {
         name: "Home",
         short_name: "Home",
-        description: "Go to the home page",
+        description: "Explore my MERN stack projects and skills", // Action-oriented
         url: "/",
+        // icon: "/icons/home.png", // Optional: add a visual cue
       },
       {
-        name: "About",
+        name: "About Me",
         short_name: "About",
-        description: "Learn more about me",
+        description: "Learn about my journey as a full-stack developer",
         url: "/about",
+        // icon: "/icons/about.png", // Optional
       },
       {
         name: "Projects",
         short_name: "Projects",
-        description:
-          "As a dedicated MERN stack developer, I've had the privilege of working on a range of projects, from dynamic web applications to scalable back-end systems. Below, you'll find a selection of some of my recent projects.",
+        description: "Discover my innovative MERN stack projects",
         url: "/projects",
+        // icon: "/icons/projects.png", // Optional
       },
       {
-        name: "Stack",
+        name: "Tech Stack",
         short_name: "Stack",
-        description:
-          "Unleashing Innovation with Cutting-Edge Tools: Exploring the Depths of my Tech Stack Expertise.",
+        description: "Explore my MERN stack skills and tools",
         url: "/stack",
+        // icon: "/icons/stack.png", // Optional
+      },
+      {
+        name: "Certificates",
+        short_name: "Certs",
+        description: "View my MERN stack and web dev certifications",
+        url: "/certificates",
+        // icon: "/icons/certificates.png", // Optional
       },
     ],
     prefer_related_applications: true,
@@ -43,6 +52,16 @@ export default function manifest() {
         sizes: "any",
         type: "image/x-icon",
       },
+      // {
+      //   src: "/icons/icon-512x512.png",
+      //   sizes: "512x512",
+      //   type: "image/png",
+      // },
+      // {
+      //   src: "/icons/icon-192x192.png",
+      //   sizes: "192x192",
+      //   type: "image/png",
+      // },
     ],
   };
 }

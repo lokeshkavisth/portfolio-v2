@@ -1,5 +1,12 @@
 User-Agent: *
-Allow: /
-Disallow: /private/
 
+# Allow search engines to crawl the entire website
+Allow: /
+
+# Disallow specific directories or files
+Disallow: /private/
+Disallow: /admin/
+Disallow: /_next/
+
+# Sitemap
 Sitemap: https://lokeshkavisth.vercel.app/sitemap.xml
