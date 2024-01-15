@@ -3,8 +3,8 @@ import data from "@/data/data.json";
 import Button from "@/components/ui/Button";
 import CardOne from "@/components/ui/CardOne";
 import flashcard from "@/assets/images/flashcard.png";
-import todo from "@/assets/images/todo.png";
-import bendy_border from "@/assets/images/bendy_border.png";
+import todoGo from "@/assets/images/todoGo.png";
+import reserve from "@/assets/images/reserve.png";
 import piksabe from "@/assets/images/piksabe.png";
 
 export const metadata = {
@@ -14,7 +14,7 @@ export const metadata = {
 };
 
 const Projects = () => {
-  const projectImages = [flashcard, piksabe, todo, bendy_border];
+  const projectImages = [reserve, flashcard, piksabe, todoGo];
 
   const { projects } = data;
 

@@ -37,31 +37,39 @@
   "projects": [
     {
       "id": 1,
+      "title": "Reserve",
+      "description": "Reserve is a sleek and intuitive bus booking application, providing a seamless platform for users to effortlessly plan and reserve their bus journeys with ease.",
+      "stack": [
+        "React.js",
+        "Node.js",
+        "TailwindCSS",
+        "Redux",
+        "Stripe",
+        "Firebase",
+        "MongoDB"
+      ],
+      "path": "https://reserve-your-bus.vercel.app/"
+    },
+    {
+      "id": 2,
       "title": "Flashcard Generator",
       "description": "Flashcard Generator is a web application that allows users to create, manage, and share custom flashcards. It provides an intuitive interface and a comprehensive set of features to enhance the learning process.",
       "stack": ["React.js", "TailwindCSS", "Redux", "Formik", "Yup"],
       "path": "https://flashcard-generator-alma.vercel.app/"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Piksabe",
       "description": "Piksabe is your go-to app for effortless image and video searches through the Pixabay API. Discover, download, and explore media with a user-friendly interface and rich filtering options.",
       "stack": ["Next.js", "TailwindCSS", "axios"],
       "path": "https://piksabe.vercel.app/"
     },
     {
-      "id": 3,
-      "title": "Todo",
+      "id": 4,
+      "title": "TodoGo",
       "description": "A TODO app that used redux, tailwind and ReactJs.",
       "stack": ["React.js", "Node.js", "TailwindCSS", "Redux"],
       "path": "https://almabetter-todo-app.vercel.app/"
-    },
-    {
-      "id": 4,
-      "title": "BendyBorder",
-      "description": "A visual generator to build organic looking shapes with the help of CSS3 border-radius property.",
-      "stack": ["React.js", "Node.js", "TailwindCSS", "Redux"],
-      "path": "https://bendyborder.vercel.app/"
     }
   ],
   "languages": {
