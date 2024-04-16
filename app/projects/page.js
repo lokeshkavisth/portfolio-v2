@@ -1,7 +1,6 @@
 import React from "react";
-import data from "@/data/data.json";
-import Button from "@/components/ui/Button";
-import CardOne from "@/components/ui/CardOne";
+import { projects } from "@/data/data.json";
+import Card from "@/components/ui/Card";
 import flashcard from "@/assets/images/flashcard.png";
 import todoGo from "@/assets/images/todoGo.png";
 import reserve from "@/assets/images/reserve.png";
@@ -16,27 +15,17 @@ export const metadata = {
 const Projects = () => {
   const projectImages = [reserve, flashcard, piksabe, todoGo];
 
-  const { projects } = data;
-
-  const myProjects = projects?.map(
-    ({ id, title, description, stack, path }, index) => (
-      <li key={id} className="relative">
-        <CardOne
-          src={projectImages[index]}
-          title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}
-          description={description}
-          stack={stack}
-          width={"auto"}
-          height={"auto"}
-          cardClass={"flex flex-col pb-24 gap-10"}
-          cardImgClass={"aspect-video object-cover w-full"}
-        />
-        <div className="absolute bottom-8 left-6">
-          <Button href={path} target={"_blank"} text={"learn more"} />
-        </div>
-      </li>
-    )
-  );
+  const myProjects = projects?.map(({ id, title, ...props }, index) => (
+    <li key={id}>
+      <Card
+        src={projectImages[index]}
+        title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}
+        {...props}
+        cardClass={"flex-col md:flex-row"}
+        cardImgClass={"aspect-video object-cover md:max-w-md"}
+      />
+    </li>
+  ));
 
   return (
     <div>
@@ -52,7 +41,7 @@ const Projects = () => {
       <hr />
 
       <div>
-        <ul className="space-y-14">{myProjects}</ul>
+        <ul className="space-y-6">{myProjects}</ul>
       </div>
     </div>
   );

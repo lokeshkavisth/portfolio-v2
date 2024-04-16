@@ -1,10 +1,10 @@
 import React from "react";
 import CardSkeleton from "@/components/ui/CardSkeleton";
-import data from "@/data/data.json";
 
 const Loading = () => {
-  const { certificates } = data;
-  const loader = certificates.map(({ id }) => <CardSkeleton key={id} />);
+  const loader = Array(2)
+    .fill(0)
+    .map((_, i) => <CardSkeleton key={i} />);
 
   return loader;
 };

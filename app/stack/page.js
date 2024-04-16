@@ -104,7 +104,7 @@ const Stack = () => {
   return (
     <div>
       <div className="space-y-6">
-        <h1 className="text-5xl">Skills</h1>
+        <h1>Skills</h1>
         <p>
           Unleashing Innovation with Cutting-Edge Tools: Exploring the Depths of
           my Tech Stack Expertise.
@@ -117,7 +117,7 @@ const Stack = () => {
 
         <div className="space-y-10">
           <div>
-            <h2 className="text-xl mb-3">Frontend</h2>
+            <h2>Frontend</h2>
             <p>
               I leverage a diverse array of frontend technologies to craft and
               develop my frontend projects.
@@ -132,7 +132,7 @@ const Stack = () => {
         {/* Backend skills */}
         <div className="space-y-10">
           <div>
-            <h2 className="text-xl mb-3">Backend</h2>
+            <h2>Backend</h2>
             <p>
               I harness a wide range of backend technologies to architect and
               build my backend projects.
@@ -146,7 +146,7 @@ const Stack = () => {
         {/* Database skills */}
         <div className="space-y-10">
           <div>
-            <h2 className="text-xl mb-3">Database</h2>
+            <h2>Database</h2>
             <p>
               I employ a diverse set of database technologies to design and
               manage the databases for my projects.
@@ -160,7 +160,7 @@ const Stack = () => {
         {/* Devlopment skills */}
         <div className="space-y-10">
           <div>
-            <h2 className="text-xl mb-3">Development Tools</h2>
+            <h2>Development Tools</h2>
             <p>
               I utilize a comprehensive suite of development tools to streamline
               and enhance the development process for my projects.

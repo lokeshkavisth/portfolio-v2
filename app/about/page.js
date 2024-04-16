@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import profile from "@/assets/images/profile.jpeg";
-import data from "@/data/data.json";
+import { education } from "@/data/data.json";
 
 export const metadata = {
   title: "About Lokesh Sharma",
@@ -11,14 +11,13 @@ export const metadata = {
 };
 
 const About = () => {
-  const { education } = data;
   const Education = education.map(({ id, name, time, level }) => (
     <li
       key={id}
-      className="flex flex-col md:flex-row md:items-center justify-between"
+      className="flex flex-col md:flex-row md:items-center justify-between border border-black_02 rounded-md p-4 bg-black_03 hover:bg-black_02 hover:bg-opacity-50 transition-all"
     >
       <h4 className="text-my_white">{name}</h4>
-      <div className="flex flex-wrap items-center gap-3 opacity-50 capitalize">
+      <div className="flex flex-wrap items-center gap-3 opacity-60 capitalize">
         <p>{level}</p>
         <span>({time})</span>
       </div>
@@ -92,8 +91,8 @@ const About = () => {
       <hr />
 
       <div>
-        <h2 className="text-xl mb-3">Education</h2>
-        <ul className="space-y-5">{Education}</ul>
+        <h2>Education</h2>
+        <ul className="space-y-2">{Education}</ul>
       </div>
     </section>
   );
