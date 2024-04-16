@@ -20,11 +20,18 @@ h3 {
   p {
     @apply text-base leading-7;
   }
+  h2 {
+    @apply text-3xl mb-3;
+  }
   h1 {
-    @apply !leading-snug;
+    @apply !leading-snug text-5xl capitalize;
   }
   h4 {
     @apply text-lg;
+  }
+
+  ::selection {
+    @apply bg-white_02 text-black_02;
   }
 }
 
