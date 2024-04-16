@@ -29,7 +29,7 @@ const Card = ({
       </div>
 
       <div className="space-y-2">
-        <h3 className="text-lg capitalize">{title}</h3>
+        <h3>{title}</h3>
         <TruncatedPara text={description} />
         {stack && (
           <ul className="flex items-center flex-wrap gap-2">
@@ -45,13 +45,13 @@ const Card = ({
         )}
 
         <div className="pt-6 flex items-center gap-4">
-          <Button href={live_url} className={""}>
+          <Button href={live_url} target="_blank">
             <CgMediaLive />
             View Live
           </Button>
 
           {github_url && (
-            <Button href={github_url} className={""}>
+            <Button href={github_url} target="_blank">
               <PiGithubLogoLight />
               Github
             </Button>

@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
         <main className="max-w-screen-lg mx-auto py-40  text-sm px-4">
           {children}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );

@@ -5,6 +5,7 @@ import flashcard from "@/assets/images/flashcard.png";
 import todoGo from "@/assets/images/todoGo.png";
 import reserve from "@/assets/images/reserve.png";
 import piksabe from "@/assets/images/piksabe.png";
+import fileflow from "@/assets/images/fileflow.png";
 
 export const metadata = {
   title: "Lokesh Sharma's Projects",
@@ -13,7 +14,7 @@ export const metadata = {
 };
 
 const Projects = () => {
-  const projectImages = [reserve, flashcard, piksabe, todoGo];
+  const projectImages = [fileflow, reserve, flashcard, piksabe, todoGo];
 
   const myProjects = projects?.map(({ id, title, ...props }, index) => (
     <li key={id}>

@@ -2,13 +2,13 @@ import { GoArrowRight } from "react-icons/go";
 import Button from "./ui/Button";
 import Card from "./ui/Card";
 import flashcard from "@/assets/images/flashcard.png";
-import todoGo from "@/assets/images/todoGo.png";
+import fileflow from "@/assets/images/fileflow.png";
 import reserve from "@/assets/images/reserve.png";
 import piksabe from "@/assets/images/piksabe.png";
 import { projects } from "@/data/data.json";
 
 export function FeaturedProjects() {
-  const featuredImages = [reserve, flashcard, piksabe, todoGo];
+  const featuredImages = [fileflow, reserve, flashcard, piksabe];
   return (
     <section className="space-y-10">
       <div>

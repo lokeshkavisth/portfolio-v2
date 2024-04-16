@@ -24,6 +24,22 @@
   "projects": [
     {
       "id": 1,
+      "title": "FileFlow",
+      "description": "FileFlow is a robust file management solution that simplifies the process of managing and sharing files. With a focus on security, accessibility, and seamless integration with cloud storage, FileFlow offers users a reliable platform for their file management needs. Its user-friendly features ensure a smooth experience, allowing users to effortlessly store, organize, and share their files.",
+      "stack": [
+        "Next.js",
+        "TypeScript",
+        "Firebase",
+        "Shadcn/ui",
+        "Clerk",
+        "React-dropzone",
+        "TailwindCSS"
+      ],
+      "live_url": "https://fileflow.vercel.app/",
+      "github_url": "https://github.com/lokeshkavisth/FileFlow"
+    },
+    {
+      "id": 2,
       "title": "Reserve",
       "description": "Reserve is a sleek and intuitive bus booking application, providing a seamless platform for users to effortlessly plan and reserve their bus journeys with ease.",
       "stack": [
@@ -39,7 +55,7 @@
       "github_url": "https://github.com/lokeshkavisth/Reserve"
     },
     {
-      "id": 2,
+      "id": 3,
       "title": "Flashcard Generator",
       "description": "Flashcard Generator is a web application that allows users to create, manage, and share custom flashcards. It provides an intuitive interface and a comprehensive set of features to enhance the learning process.",
       "stack": ["React.js", "TailwindCSS", "Redux", "Formik", "Yup"],
@@ -47,7 +63,7 @@
       "github_url": "https://github.com/lokeshkavisth/flashcard-generator"
     },
     {
-      "id": 3,
+      "id": 4,
       "title": "Piksabe",
       "description": "Piksabe is your go-to app for effortless image and video searches through the Pixabay API. Discover, download, and explore media with a user-friendly interface and rich filtering options.",
       "stack": ["Next.js", "TailwindCSS", "axios"],
@@ -55,7 +71,7 @@
       "github_url": "https://github.com/lokeshkavisth/piksabe"
     },
     {
-      "id": 4,
+      "id": 5,
       "title": "TodoGo",
       "description": "A TODO app that used redux, tailwind and ReactJs.",
       "stack": ["React.js", "Node.js", "TailwindCSS", "Redux"],
