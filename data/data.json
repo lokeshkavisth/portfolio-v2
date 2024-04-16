@@ -12,26 +12,13 @@
     },
     {
       "id": 3,
-      "title": "Projects",
-      "path": "/projects"
-    },
-    {
-      "id": 4,
       "title": "Stack",
       "path": "/stack"
     },
     {
-      "id": 5,
+      "id": 4,
       "title": "Certificates",
       "path": "/certificates"
-    }
-  ],
-  "featured": [
-    {
-      "id": 1,
-      "title": "Flashcard Generator",
-      "description": "A web application that enables users to create, manage, and share personalized flashcards. It has an easy-to-use interface and a comprehensive set of features to help with learning.",
-      "path": "https://generator-flashcard.vercel.app/"
     }
   ],
   "projects": [
@@ -48,28 +35,32 @@
         "Firebase",
         "MongoDB"
       ],
-      "path": "https://reserve-your-bus.vercel.app/"
+      "live_url": "https://reserve-your-bus.vercel.app/",
+      "github_url": "https://reserve-your-bus.vercel.app/"
     },
     {
       "id": 2,
       "title": "Flashcard Generator",
       "description": "Flashcard Generator is a web application that allows users to create, manage, and share custom flashcards. It provides an intuitive interface and a comprehensive set of features to enhance the learning process.",
       "stack": ["React.js", "TailwindCSS", "Redux", "Formik", "Yup"],
-      "path": "https://flashcard-generator-alma.vercel.app/"
+      "live_url": "https://flashcard-generator-alma.vercel.app/",
+      "github_url": "https://flashcard-generator-alma.vercel.app/"
     },
     {
       "id": 3,
       "title": "Piksabe",
       "description": "Piksabe is your go-to app for effortless image and video searches through the Pixabay API. Discover, download, and explore media with a user-friendly interface and rich filtering options.",
       "stack": ["Next.js", "TailwindCSS", "axios"],
-      "path": "https://piksabe.vercel.app/"
+      "live_url": "https://piksabe.vercel.app/",
+      "github_url": "https://piksabe.vercel.app/"
     },
     {
       "id": 4,
       "title": "TodoGo",
       "description": "A TODO app that used redux, tailwind and ReactJs.",
       "stack": ["React.js", "Node.js", "TailwindCSS", "Redux"],
-      "path": "https://almabetter-todo-app.vercel.app/"
+      "live_url": "https://almabetter-todo-app.vercel.app/",
+      "github_url": "https://almabetter-todo-app.vercel.app/"
     }
   ],
   "languages": {
@@ -193,7 +184,7 @@
         "TailwindCSS",
         "Jest"
       ],
-      "path": "https://certificates.almabetter.com/en/verify/12961274047608"
+      "live_url": "https://certificates.almabetter.com/en/verify/12961274047608"
     },
     {
       "id": 2,
@@ -211,7 +202,7 @@
         "Express.js",
         "Firebase"
       ],
-      "path": "https://www.udemy.com/certificate/UC-831c3133-40c7-4739-92ef-6baa7efd2305/"
+      "live_url": "https://www.udemy.com/certificate/UC-831c3133-40c7-4739-92ef-6baa7efd2305/"
     }
   ]
 }
