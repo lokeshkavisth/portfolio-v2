@@ -3,11 +3,12 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { VscMenu } from "react-icons/vsc";
-import data from "@/data/data.json";
+import { nav } from "@/data/data.json";
+import Logo from "../Logo";
 
 const Navbar = () => {
   const currentPath = usePathname();
-  const navMenu = data.nav.map(({ id, title, path }) => (
+  const navMenu = nav.map(({ id, title, path }) => (
     <li key={id}>
       <Link
         href={path}
@@ -34,9 +35,7 @@ const Navbar = () => {
       <span className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500"></span>
       <div className="flex items-center justify-between max-w-[110em] mx-auto py-6 px-1">
         <div>
-          <Link href={"/"} className="text-base">
-            Lokesh.
-          </Link>
+          <Logo />
         </div>
         <div>
           <div>
