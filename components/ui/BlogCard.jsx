@@ -38,7 +38,7 @@ const BlogCard = ({
       <div className="space-y-2">
         <h3 className="text-lg capitalize group-hover:underline underline-offset-4">
           <Link
-            target="_black" // Remove this line when using slugs
+            target="_blank" // Remove this line when using slugs
             href={{
               // pathname: `/blogs/${slug}`, // Uncomment this line when using slugs
               pathname: url, // comment this line when using slugs

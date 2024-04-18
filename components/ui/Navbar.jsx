@@ -1,33 +1,34 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { VscMenu } from "react-icons/vsc";
-import { nav } from "@/data/data.json";
 import Logo from "../Logo";
+import { navMenu } from "@/constants/constent";
+import { GrClose } from "react-icons/gr";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const currentPath = usePathname();
-  const navMenu = nav.map(({ id, title, path }) => (
-    <li key={id}>
+  const navigationMenu = navMenu.map(({ id, title, url, icon }) => (
+    <li key={id} className="w-full">
       <Link
-        href={path}
+        href={url}
         onClick={() => {
-          if (window.innerWidth < 768) toggleSidebar();
+          if (window.innerWidth < 768) setIsOpen(false);
         }}
         className={`${
-          currentPath === path && "bg-black_02 text-white_01"
-        } px-4 py-2 font-medium rounded-md hover:bg-black_02 hover:text-white_01`}
+          currentPath === url && "bg-black_02 text-white_01"
+        } px-4 py-4 md:py-2 font-medium rounded-md hover:bg-black_02 hover:text-white_01 flex items-center gap-2`}
       >
+        {icon}
         {title}
       </Link>
     </li>
   ));
 
   const toggleSidebar = () => {
-    const navbar = document.getElementById("navbar");
-    navbar.classList.toggle("right-0");
-    navbar.classList.toggle("-right-80");
+    setIsOpen((prev) => !prev);
   };
 
   return (
@@ -39,16 +40,21 @@ const Navbar = () => {
         </div>
         <div>
           <div>
-            <i className="text-xl md:hidden cursor-pointer">
-              <VscMenu onClick={toggleSidebar} />
-            </i>
+            <button
+              onClick={toggleSidebar}
+              className="text-xl md:hidden z-50 relative cursor-pointer p-4 bg-black_02 rounded-full"
+            >
+              {isOpen ? <GrClose /> : <VscMenu />}
+            </button>
           </div>
           <nav
-            className="absolute top-[72px] -right-80 z-40 h-screen w-full max-w-[200px] bg-black_03 md:static md:w-auto md:max-w-full md:h-auto md:top-auto md:right-auto md:bg-inherit transition-all"
+            className={`absolute  z-40 h-screen w-full  bg-black_03 md:static md:w-auto md:max-w-full md:h-auto md:top-auto md:right-auto md:bg-inherit transition-all  top-0 pt-20 md:pt-0 ${
+              isOpen ? "right-0" : "-right-full"
+            }`}
             id="navbar"
           >
-            <ul className="flex flex-col items-center md:gap-1 md:flex-row gap-6 mt-10 md:mt-0">
-              {navMenu}
+            <ul className="flex w-full flex-col items-center md:gap-1 md:flex-row gap-6   p-6 md:p-0">
+              {navigationMenu}
             </ul>
           </nav>
         </div>

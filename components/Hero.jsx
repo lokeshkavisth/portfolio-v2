@@ -1,30 +1,7 @@
 import Link from "next/link";
-import { VscGithubInverted } from "react-icons/vsc";
-import { FaLinkedinIn } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
-import { FaXTwitter } from "react-icons/fa6";
 import Button from "./ui/Button";
-
-const socialHome = [
-  {
-    id: 1,
-    title: "X",
-    icon: <FaXTwitter />,
-    path: "https://x.com/",
-  },
-  {
-    id: 2,
-    title: "LinkedIn",
-    icon: <FaLinkedinIn />,
-    path: "https://www.linkedin.com/in/",
-  },
-  {
-    id: 3,
-    title: "GitHub",
-    icon: <VscGithubInverted />,
-    path: "https://github.com/",
-  },
-];
+import { socialHome } from "@/constants/constent";
 
 export function Hero() {
   const socialLinksHome = socialHome?.map(({ id, title, icon, path }) => (
