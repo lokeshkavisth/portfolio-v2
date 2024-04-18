@@ -11,6 +11,7 @@ export async function FeaturedBlogs() {
         id
         title
         brief
+        url
         slug
         tags {
           id
@@ -22,7 +23,7 @@ export async function FeaturedBlogs() {
 }`;
 
   const response = await FetchBlogs({ query });
-  // console.log("posts", response);
+  console.log("posts", response);
 
   return (
     <section className="space-y-10">

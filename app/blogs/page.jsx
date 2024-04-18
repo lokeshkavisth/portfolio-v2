@@ -4,7 +4,7 @@ import { FetchBlogs } from "@/utils/fetch-blogs";
 import { GrPrevious, GrNext } from "react-icons/gr";
 
 export default async function page({ searchParams }) {
-  const pageSize = 4; // Adjust as needed
+  const pageSize = 6; // Adjust as needed
   let page = searchParams?.page || 1;
 
   const query = `query User {
@@ -15,6 +15,7 @@ export default async function page({ searchParams }) {
         title
         brief
         slug
+        url
         coverImage {
           url
         }
