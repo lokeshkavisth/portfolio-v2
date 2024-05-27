@@ -59,7 +59,7 @@
       "title": "Flashcard Generator",
       "description": "Flashcard Generator is a web application that allows users to create, manage, and share custom flashcards. It provides an intuitive interface and a comprehensive set of features to enhance the learning process.",
       "stack": ["React.js", "TailwindCSS", "Redux", "Formik", "Yup"],
-      "live_url": "https://flashcard-generator-alma.vercel.app/",
+      "live_url": "https://generator-flashcard.vercel.app/",
       "github_url": "https://github.com/lokeshkavisth/flashcard-generator"
     },
     {
