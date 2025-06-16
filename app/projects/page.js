@@ -1,11 +1,5 @@
 import Card from "@/components/ui/Card";
-import React from "react";
-import fileflow from "@/assets/images/fileflow.png";
-import flashcard from "@/assets/images/flashcard.png";
-import piksabe from "@/assets/images/piksabe.png";
 import { projects } from "@/data/data.json";
-import reserve from "@/assets/images/reserve.png";
-import todoGo from "@/assets/images/todoGo.png";
 
 export const metadata = {
   title: "Lokesh Sharma's Projects",
@@ -14,8 +8,6 @@ export const metadata = {
 };
 
 const Projects = () => {
-  const projectImages = [fileflow, reserve, flashcard, piksabe, todoGo];
-
   return (
     <div>
       <div className="space-y-6">
@@ -31,10 +23,10 @@ const Projects = () => {
 
       <div>
         <ul className="space-y-6">
-          {projects?.map(({ id, title, ...props }, index) => (
+          {projects?.map(({ id, title, thumbnail, ...props }, index) => (
             <li key={id}>
               <Card
-                src={projectImages[index]}
+                src={thumbnail}
                 title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}
                 {...props}
                 cardClass={"flex-col md:flex-row"}

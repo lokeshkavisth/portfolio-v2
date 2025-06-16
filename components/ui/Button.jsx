@@ -2,7 +2,7 @@ import Link from "next/link";
 import { cn } from "@/utils/cn";
 import { cva } from "class-variance-authority";
 
-const Button = ({ variant, size, className, ...props }) => {
+export const Button = ({ variant, size, className, ...props }) => {
   return (
     <Link
       {...props}
@@ -11,7 +11,7 @@ const Button = ({ variant, size, className, ...props }) => {
   );
 };
 
-const buttonvariants = cva(
+export const buttonvariants = cva(
   "text-white_01 text-sm transition-all max-w-max font-medium md:text-base flex items-center gap-2 hover:gap-4 min-w-max",
   {
     variants: {
@@ -35,5 +35,3 @@ const buttonvariants = cva(
     },
   }
 );
-
-export default Button;

@@ -1,7 +1,8 @@
+import { GrNext, GrPrevious } from "react-icons/gr";
+
 import BlogCard from "@/components/ui/BlogCard";
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import { FetchBlogs } from "@/utils/fetch-blogs";
-import { GrPrevious, GrNext } from "react-icons/gr";
 
 export default async function page({ searchParams }) {
   const pageSize = 6; // Adjust as needed

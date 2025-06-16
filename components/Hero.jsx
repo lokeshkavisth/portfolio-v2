@@ -1,4 +1,4 @@
-import Button from "./ui/Button";
+import { Button } from "./ui/Button";
 import { IoMail } from "react-icons/io5";
 import Link from "next/link";
 import { socialHome } from "@/constants/constent";

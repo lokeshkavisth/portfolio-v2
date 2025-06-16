@@ -20,12 +20,12 @@ export const metadata = {
     "Jaipur",
     "India",
   ],
-  image: "../assets/images/profile.jpeg",
+  image: "/profile.webp",
   og: {
     title: "Lokesh Sharma | MERN Stack Developer",
     description:
       "Creating innovative web solutions with MERN Stack. Based in Jaipur, India.",
-    image: "../assets/images/profile.jpeg",
+    image: "/profile.webp",
     url: "https://lokeshkavisth.vercel.app/",
     type: "profile",
     site_name: "Lokesh Sharma",
@@ -41,7 +41,7 @@ export const metadata = {
     title: "@lokeshkavisth | MERN Stack Developer",
     description: "Creating exceptional web experiences with MERN Stack.",
     url: "https://lokeshkavisth.vercel.app/",
-    image: "../assets/images/profile.jpeg",
+    image: "/profile.webp",
   },
 };
 

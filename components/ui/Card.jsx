@@ -1,4 +1,4 @@
-import Button from "./Button";
+import { Button } from "./Button";
 import { CgMediaLive } from "react-icons/cg";
 import Image from "next/image";
 import { PiGithubLogoLight } from "react-icons/pi";

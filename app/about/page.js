@@ -1,12 +1,11 @@
+import { Button, buttonvariants } from "@/components/ui/Button";
 import { certificates, education, experiences, skills } from "@/data/data.json";
 
-import Button from "@/components/ui/Button";
 import Card from "@/components/ui/Card";
 import DynamicIcon from "@/components/dynamic-icon";
 import Image from "next/image";
 import Link from "next/link";
 import { PiReadCvLogoDuotone } from "react-icons/pi";
-import profile from "@/assets/images/profile.jpeg";
 
 export const metadata = {
   title: "About Lokesh Sharma",
@@ -36,10 +35,12 @@ const About = () => {
   return (
     <section>
       <div className="space-y-10">
-        <div>
+        <div className="border-4 rounded-2xl border-black_04/70 overflow-hidden">
           <Image
-            src={profile}
+            src={"/profile.webp"}
             alt="Lokesh Sharma"
+            width={1000}
+            height={400}
             className="aspect-video object-cover rounded-lg"
           />
         </div>
@@ -93,13 +94,14 @@ const About = () => {
 
           {/* 🔽 Download Resume Button */}
           <div>
-            <Button
+            <a
+              className={buttonvariants({ variant: "primary" })}
               download
-              href={"../../assets/docs/MERN-Developer-Lokesh-Sharma.pdf"}
+              href={"/MERN-Developer-Lokesh-Sharma.pdf"}
               title={"Get resume"}
             >
               <PiReadCvLogoDuotone /> Download Resume
-            </Button>
+            </a>
           </div>
 
           {/* 🧠 Currently Learning / Fun Fact Section */}

@@ -1,7 +1,7 @@
-import { GoArrowRight } from "react-icons/go";
-import Button from "./ui/Button";
 import BlogCard from "./ui/BlogCard";
+import { Button } from "./ui/Button";
 import { FetchBlogs } from "@/utils/fetch-blogs";
+import { GoArrowRight } from "react-icons/go";
 
 export async function FeaturedBlogs() {
   const query = `query User {

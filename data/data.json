@@ -14,7 +14,8 @@
         "TailwindCSS"
       ],
       "live_url": "https://fileflow.vercel.app/",
-      "github_url": "https://github.com/lokeshkavisth/FileFlow"
+      "github_url": "https://github.com/lokeshkavisth/FileFlow",
+      "thumbnail": "/fileflow.png"
     },
     {
       "id": 2,
@@ -30,7 +31,8 @@
         "MongoDB"
       ],
       "live_url": "https://reserve-your-bus.vercel.app/",
-      "github_url": "https://github.com/lokeshkavisth/Reserve"
+      "github_url": "https://github.com/lokeshkavisth/Reserve",
+      "thumbnail": "/reserve.png"
     },
     {
       "id": 3,
@@ -49,7 +51,8 @@
         "TailwindCSS"
       ],
       "live_url": "https://voxa-ai.netlify.app/",
-      "github_url": "https://github.com/lokeshkavisth/voxa-ai"
+      "github_url": "https://github.com/lokeshkavisth/voxa-ai",
+      "thumbnail": "/voxa.png"
     },
     {
       "id": 4,
@@ -57,7 +60,8 @@
       "description": "Piksabe is your go-to app for effortless image and video searches through the Pixabay API. Discover, download, and explore media with a user-friendly interface and rich filtering options.",
       "stack": ["Next.js", "TailwindCSS", "axios"],
       "live_url": "https://piksabe.vercel.app/",
-      "github_url": "https://github.com/lokeshkavisth/piksabe"
+      "github_url": "https://github.com/lokeshkavisth/piksabe",
+      "thumbnail": "/piksabe.png"
     }
   ],
   "skills": [
