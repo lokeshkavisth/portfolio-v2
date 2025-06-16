@@ -1,11 +1,11 @@
-import React from "react";
-import { projects } from "@/data/data.json";
 import Card from "@/components/ui/Card";
-import flashcard from "@/assets/images/flashcard.png";
-import todoGo from "@/assets/images/todoGo.png";
-import reserve from "@/assets/images/reserve.png";
-import piksabe from "@/assets/images/piksabe.png";
+import React from "react";
 import fileflow from "@/assets/images/fileflow.png";
+import flashcard from "@/assets/images/flashcard.png";
+import piksabe from "@/assets/images/piksabe.png";
+import { projects } from "@/data/data.json";
+import reserve from "@/assets/images/reserve.png";
+import todoGo from "@/assets/images/todoGo.png";
 
 export const metadata = {
   title: "Lokesh Sharma's Projects",
@@ -15,18 +15,6 @@ export const metadata = {
 
 const Projects = () => {
   const projectImages = [fileflow, reserve, flashcard, piksabe, todoGo];
-
-  const myProjects = projects?.map(({ id, title, ...props }, index) => (
-    <li key={id}>
-      <Card
-        src={projectImages[index]}
-        title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}
-        {...props}
-        cardClass={"flex-col md:flex-row"}
-        cardImgClass={"aspect-video object-cover md:max-w-md"}
-      />
-    </li>
-  ));
 
   return (
     <div>
@@ -42,7 +30,19 @@ const Projects = () => {
       <hr />
 
       <div>
-        <ul className="space-y-6">{myProjects}</ul>
+        <ul className="space-y-6">
+          {projects?.map(({ id, title, ...props }, index) => (
+            <li key={id}>
+              <Card
+                src={projectImages[index]}
+                title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}
+                {...props}
+                cardClass={"flex-col md:flex-row"}
+                cardImgClass={"aspect-video object-cover md:max-w-md"}
+              />
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

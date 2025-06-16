@@ -1,5 +1,7 @@
-import { FaCode, FaFile, FaHome, FaLinkedinIn, FaUser } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { FaHashnode, FaXTwitter } from "react-icons/fa6";
+import { FaHome, FaLinkedinIn, FaUser } from "react-icons/fa";
+
+import { PiTerminalWindowFill } from "react-icons/pi";
 import { VscGithubInverted } from "react-icons/vsc";
 
 export const socialHome = [
@@ -38,14 +40,14 @@ export const navMenu = [
   },
   {
     id: 3,
-    title: "Stack",
-    icon: <FaCode />,
-    url: "/stack",
+    title: "Blog",
+    icon: <FaHashnode />,
+    url: "/blogs",
   },
   {
-    id: 4,
-    title: "Certificates",
-    icon: <FaFile />,
-    url: "/certificates",
+    id: 3,
+    title: "Projects",
+    icon: <PiTerminalWindowFill />,
+    url: "/projects",
   },
 ];

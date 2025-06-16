@@ -1,6 +1,6 @@
-import Link from "next/link";
-import { IoMail } from "react-icons/io5";
 import Button from "./ui/Button";
+import { IoMail } from "react-icons/io5";
+import Link from "next/link";
 import { socialHome } from "@/constants/constent";
 
 export function Hero() {
@@ -19,29 +19,23 @@ export function Hero() {
 
   return (
     <>
-      <h1 className="text-4xl sm:text-5xl pb-16">
-        Versatile MERN Stack Web Developer and Tech Enthusiast.
+      <h1 className="text-4xl sm:text-5xl pb-10">
+        Namaste! I’m Lokesh — your friendly neighborhood full-stack developer
+        from Jaipur.
       </h1>
-      <p>
-        Hello, my name is Lokesh Sharma, and I am a Full Stack Web Developer
-        living in Jaipur, India. As a developer, I am skilled in JavaScript,
-        React.js, Node.js, Express.js, MongoDB, and{" "}
-        <Link
-          href={"/stack"}
-          className="border-b-4 border-b-white_02 text-white_01"
-        >
-          other
-        </Link>{" "}
-        Web Development tools and technologies.
+
+      <p className="pb-4">
+        I design and build web experiences that are fast, intuitive, and a
+        little bit delightful. Whether it’s front-end, back-end, or somewhere in
+        between — I bring ideas to life through clean, thoughtful code.
       </p>
 
       <p>
-        I am an extremely driven and goal-oriented person. I&#39;m constantly
-        eager to pick up new skills and am always searching for methods to get
-        better at what I do. I am confident that I can contribute my skills and
-        experience to your team. I am excited to discuss my portfolio with you
-        and hope to hear from you soon.
+        Also, fun fact: I don’t drink coffee. Still a developer though — powered
+        by curiosity, good vibes, and way too many open tabs. Let’s build
+        something cool together.
       </p>
+
       <section className="pt-16">
         <ul className="flex flex-wrap items-center gap-5 text-2xl">
           {socialLinksHome}

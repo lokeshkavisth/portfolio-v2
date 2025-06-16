@@ -1,26 +1,4 @@
 {
-  "nav": [
-    {
-      "id": 1,
-      "title": "Home",
-      "path": "/"
-    },
-    {
-      "id": 2,
-      "title": "About",
-      "path": "/about"
-    },
-    {
-      "id": 3,
-      "title": "Stack",
-      "path": "/stack"
-    },
-    {
-      "id": 4,
-      "title": "Certificates",
-      "path": "/certificates"
-    }
-  ],
   "projects": [
     {
       "id": 1,
@@ -56,11 +34,22 @@
     },
     {
       "id": 3,
-      "title": "Flashcard Generator",
-      "description": "Flashcard Generator is a web application that allows users to create, manage, and share custom flashcards. It provides an intuitive interface and a comprehensive set of features to enhance the learning process.",
-      "stack": ["React.js", "TailwindCSS", "Redux", "Formik", "Yup"],
-      "live_url": "https://generator-flashcard.vercel.app/",
-      "github_url": "https://github.com/lokeshkavisth/flashcard-generator"
+      "title": "Voxa-ai",
+      "description": "Voxa-ai is an AI-powered career assistant platform that leverages Gemini AI to generate personalized content and insights. It offers features like ATS scoring, resume feedback, cover letter generation, and interview prep tools. Automated updates keep users informed about industry trends, salaries, and in-demand skills.",
+      "stack": [
+        "Next.js",
+        "Gemini AI",
+        "Shadcn",
+        "Prisma",
+        "Clerk",
+        "Neon DB",
+        "PostgreSQL",
+        "Recharts",
+        "Inngest",
+        "TailwindCSS"
+      ],
+      "live_url": "https://voxa-ai.netlify.app/",
+      "github_url": "https://github.com/lokeshkavisth/voxa-ai"
     },
     {
       "id": 4,
@@ -69,104 +58,38 @@
       "stack": ["Next.js", "TailwindCSS", "axios"],
       "live_url": "https://piksabe.vercel.app/",
       "github_url": "https://github.com/lokeshkavisth/piksabe"
-    },
-    {
-      "id": 5,
-      "title": "TodoGo",
-      "description": "A TODO app that used redux, tailwind and ReactJs.",
-      "stack": ["React.js", "Node.js", "TailwindCSS", "Redux"],
-      "live_url": "https://almabetter-todo-app.vercel.app/",
-      "github_url": "https://github.com/lokeshkavisth/todogo"
     }
   ],
-  "languages": {
-    "frontend": [
-      {
-        "id": 1,
-        "title": "HTML"
-      },
-      {
-        "id": 2,
-        "title": "CSS"
-      },
-      {
-        "id": 3,
-        "title": "JavaScript"
-      },
-      {
-        "id": 4,
-        "title": "MUI"
-      },
-      {
-        "id": 5,
-        "title": "Tailwind-CSS"
-      },
-      {
-        "id": 6,
-        "title": "Bootstrap"
-      },
-      {
-        "id": 7,
-        "title": "Sass/Scss",
-        "description": "CSS with superpowers"
-      },
-      {
-        "id": 8,
-        "title": "Less"
-      },
-      {
-        "id": 9,
-        "title": "React.js"
-      },
-      {
-        "id": 10,
-        "title": "Redux"
-      },
-      {
-        "id": 11,
-        "title": "jQuery"
-      }
-    ],
-    "backend": [
-      {
-        "id": 1,
-        "title": "Node.js"
-      },
-      {
-        "id": 2,
-        "title": "Express.js"
-      }
-    ],
-    "database": [
-      {
-        "id": 1,
-        "title": "MySQL"
-      },
-      {
-        "id": 2,
-        "title": "MongoDB"
-      }
-    ],
-    "development_tools": [
-      {
-        "id": 1,
-        "title": "Git"
-      },
-      {
-        "id": 2,
-        "title": "Npm"
-      },
-      {
-        "id": 3,
-        "title": "Yarn"
-      }
-    ]
-  },
+  "skills": [
+    { "id": 1, "title": "HTML", "icon": "fa:FaHtml5" },
+    { "id": 2, "title": "CSS", "icon": "fa:FaCss3Alt" },
+    { "id": 3, "title": "JavaScript", "icon": "si:SiJavascript" },
+    { "id": 4, "title": "TypeScript", "icon": "si:SiTypescript" },
+    { "id": 5, "title": "React.js", "icon": "fa:FaReact" },
+    { "id": 6, "title": "Redux", "icon": "si:SiRedux" },
+    { "id": 7, "title": "TailwindCSS", "icon": "si:SiTailwindcss" },
+    { "id": 8, "title": "Shadcn", "icon": "si:SiVercel" },
+    { "id": 9, "title": "Bootstrap", "icon": "fa:FaBootstrap" },
+    { "id": 10, "title": "Material-UI", "icon": "si:SiMui" },
+    { "id": 11, "title": "jQuery", "icon": "si:SiJquery" },
+    { "id": 1, "title": "Node.js", "icon": "fa:FaNodeJs" },
+    { "id": 2, "title": "Express.js", "icon": "si:SiExpress" },
+    { "id": 1, "title": "MongoDB", "icon": "si:SiMongodb" },
+    { "id": 2, "title": "PostgreSQL", "icon": "si:SiPostgresql" },
+    { "id": 3, "title": "Neon DB", "icon": "si:SiNeovim" },
+    { "id": 1, "title": "Git", "icon": "fa:FaGitAlt" },
+    { "id": 2, "title": "GitHub", "icon": "fa:FaGithub" },
+    { "id": 3, "title": "Postman", "icon": "si:SiPostman" },
+    { "id": 4, "title": "Figma", "icon": "fa:FaFigma" },
+    { "id": 5, "title": "Vercel", "icon": "si:SiVercel" },
+    { "id": 6, "title": "Render", "icon": "si:SiRender" },
+    { "id": 7, "title": "Netlify", "icon": "si:SiNetlify" }
+  ],
   "education": [
     {
       "id": 1,
       "name": "AlmaBetter Institute",
-      "time": "febaury 2023 - august 2023",
+      "time": "febaury 2023 - June 2024",
       "level": "MERN Stack"
     },
     {
@@ -184,6 +107,22 @@
   ],
   "certificates": [
     {
+      "id": 3,
+      "title": "Full Stack Web Developer Intern",
+      "description": "On December 31, 2024, I completed my Web Developer Internship at Lightning Technologies. During this 4-month program, I worked on real-world projects involving REST APIs, MongoDB, React.js, and Tailwind CSS. This internship allowed me to enhance my backend performance skills, optimize database queries, and collaborate in Agile teams to deliver production-ready features.",
+      "stack": [
+        "React.js",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "MongoDB",
+        "REST APIs",
+        "Agile"
+      ],
+      "live_url": "https://www.lightningtechnologies.net/",
+      "certificate": "/FSWDC_LightningTechnologies.png"
+    },
+    {
       "id": 1,
       "title": "Full Stack Web Development Program",
       "description": "On August 18, 2023, I received the 'Full Stack Web Development Program' certificate from 'AlmaBetter'. This comprehensive program provided me with expertise in a variety of technologies, allowing me to complete 50+ projects and assessments and devote over 80+ hours to coding exercises.",
@@ -200,7 +139,8 @@
         "TailwindCSS",
         "Jest"
       ],
-      "live_url": "https://certificates.almabetter.com/en/verify/12961274047608"
+      "live_url": "https://certificates.almabetter.com/en/verify/12961274047608",
+      "certificate": "/FSWDC_AlmaBetter.png"
     },
     {
       "id": 2,
@@ -218,7 +158,45 @@
         "Express.js",
         "Firebase"
       ],
-      "live_url": "https://www.udemy.com/certificate/UC-831c3133-40c7-4739-92ef-6baa7efd2305/"
+      "live_url": "https://www.udemy.com/certificate/UC-831c3133-40c7-4739-92ef-6baa7efd2305/",
+      "certificate": "/FSWDC_Udemy.jpg"
+    }
+  ],
+  "experiences": [
+    {
+      "company": "PixelForge Innovations",
+      "title": "Full Stack Web Developer Intern",
+      "location": "(Remote)",
+      "duration": "Jan 2025 – May 2025",
+      "points": [
+        "Developed and maintained core features for a client dashboard using Next.js, TypeScript, and Express.js.",
+        "Integrated MongoDB and Firebase Auth for secure user data handling and real-time updates.",
+        "Built reusable React components with Tailwind CSS, improving code reusability by 35%.",
+        "Collaborated in Agile sprints with designers and backend engineers to deliver production-ready modules."
+      ]
+    },
+    {
+      "company": "Lightning Technologies",
+      "title": "Full Stack Web Developer Intern",
+      "location": "(Remote)",
+      "duration": "Aug 2024 – Dec 2024",
+      "points": [
+        "Enhanced REST API performance by 25% through optimized error handling and modular code architecture.",
+        "Improved MongoDB query efficiency by 30% with optimized queries and transactional support.",
+        "Developed responsive UI components with React.js and Tailwind CSS, improving the user experience.",
+        "Collaborated with cross-functional teams to deliver scalable web solutions aligned with business goals."
+      ]
+    },
+    {
+      "company": "AlmaBetter",
+      "title": "Full Stack Web Developer Intern",
+      "location": "(Remote)",
+      "duration": "Feb 2023 – June 2024",
+      "points": [
+        "Optimized website performance and implemented robust backend functionalities.",
+        "Enhanced frontend interactivity using jQuery, Bootstrap, Material-UI, and Tailwind CSS.",
+        "Managed Webpack and Babel.js for efficient code bundling and transpilation in the 'BookMyShow' project."
+      ]
     }
   ]
 }

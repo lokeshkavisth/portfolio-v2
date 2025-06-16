@@ -1,7 +1,6 @@
-import Navbar from "@/components/ui/Navbar";
 import "@/app/globals.css";
-import Cursor from "@/components/ui/Cursor";
-import Footer from "@/components/ui/Footer";
+
+import Navbar from "@/components/ui/Navbar";
 
 export const metadata = {
   title: {
@@ -50,12 +49,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="overflow-x-hidden">
       <body className="bg-black_01 text-white_02 font-JetBrains overflow-x-hidden">
-        {/* <Cursor /> */}
         <Navbar />
         <main className="max-w-screen-lg mx-auto py-40  text-sm px-4">
           {children}
         </main>
-        {/* <Footer /> */}
       </body>
     </html>
   );

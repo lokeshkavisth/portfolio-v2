@@ -1,6 +1,6 @@
-import Image from "next/image";
 import Button from "./Button";
 import { CgMediaLive } from "react-icons/cg";
+import Image from "next/image";
 import { PiGithubLogoLight } from "react-icons/pi";
 import TruncatedPara from "../TruncatedPara";
 
@@ -16,15 +16,15 @@ const Card = ({
 }) => {
   return (
     <section
-      className={`flex gap-6 border border-black_02 rounded-md p-4 sm:p-6 bg-black_03 hover:bg-black_02 hover:bg-opacity-50 transition-all group  ${cardClass}`}
+      className={`flex items-center gap-6 border border-black_02 rounded-2xl p-4 sm:p-6 bg-black_03 hover:bg-black_02/70  transition-all group  ${cardClass}`}
     >
       <div>
         <Image
           src={src}
           alt={title}
-          width={"auto" || 250}
-          height={"auto" || 250}
-          className={`aspect-video object-cover md:max-w-md rounded-md group-hover:scale-105 transition-all ease-in-out  ${cardImgClass}`}
+          width={500}
+          height={500}
+          className={`aspect-video object-cover md:max-w-md rounded-xl group-hover:scale-105 transition-all ease-in-out  ${cardImgClass}`}
         />
       </div>
 

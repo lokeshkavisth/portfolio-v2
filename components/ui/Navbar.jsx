@@ -1,15 +1,17 @@
 "use client";
-import React, { useState } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { VscMenu } from "react-icons/vsc";
-import Logo from "../Logo";
-import { navMenu } from "@/constants/constent";
+
 import { GrClose } from "react-icons/gr";
+import Link from "next/link";
+import Logo from "../Logo";
+import { VscMenu } from "react-icons/vsc";
+import { navMenu } from "@/constants/constent";
+import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const currentPath = usePathname();
+
   const navigationMenu = navMenu.map(({ id, title, url, icon }) => (
     <li key={id} className="w-full">
       <Link
