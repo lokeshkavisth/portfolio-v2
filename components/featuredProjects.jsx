@@ -1,7 +1,7 @@
 import { Button } from "./ui/Button";
 import Card from "./ui/Card";
 import { GoArrowRight } from "react-icons/go";
-import { projects } from "@/data/data.json";
+import { projects } from "@/data/data";
 
 export function FeaturedProjects() {
   return (
@@ -15,8 +15,8 @@ export function FeaturedProjects() {
         <ul className="space-y-6">
           {projects
             ?.slice(0, 3)
-            ?.map(({ id, title, thumbnail, ...props }, index) => (
-              <li key={id}>
+            ?.map(({ title, thumbnail, ...props }, index) => (
+              <li key={title}>
                 <Card
                   src={thumbnail}
                   title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}

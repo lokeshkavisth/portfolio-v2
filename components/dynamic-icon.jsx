@@ -3,6 +3,7 @@ import * as FaIcons from "react-icons/fa";
 import * as IoIcons from "react-icons/io5";
 import * as SiIcons from "react-icons/si";
 import * as TbIcons from "react-icons/tb";
+import * as VscIcons from "react-icons/vsc";
 
 const libraries = {
   fa: FaIcons,
@@ -10,6 +11,7 @@ const libraries = {
   tb: TbIcons,
   bi: BiIcons,
   io: IoIcons,
+  vsc: VscIcons,
 };
 
 export default function DynamicIcon({ icon, className }) {

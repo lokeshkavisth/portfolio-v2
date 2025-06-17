@@ -1,11 +1,11 @@
-import { Button, buttonvariants } from "@/components/ui/Button";
-import { certificates, education, experiences, skills } from "@/data/data.json";
-
-import Card from "@/components/ui/Card";
-import DynamicIcon from "@/components/dynamic-icon";
+import Certificate from "@/components/certificate";
+import Education from "@/components/education";
+import Experience from "@/components/experience";
 import Image from "next/image";
 import Link from "next/link";
 import { PiReadCvLogoDuotone } from "react-icons/pi";
+import Skill from "@/components/skill";
+import { buttonvariants } from "@/components/ui/Button";
 
 export const metadata = {
   title: "About Lokesh Sharma",
@@ -47,7 +47,8 @@ const About = () => {
 
         <div className="space-y-8">
           <p>
-            👋 Hey there! I’m Lokesh Sharma — a {calculateAge("2000-10-15")}
+            👋 Hey there! I&apos;m Lokesh Sharma — a{" "}
+            {calculateAge("2000-10-15")}
             -year-old Full Stack Web Developer coding my way from the colorful
             streets of{" "}
             <Link
@@ -58,7 +59,7 @@ const About = () => {
               Jaipur
             </Link>
             , Rajasthan, India. I earned my degree in Arts from SS Jain Subodh
-            PG College in 2021, and I’ve been coding ever since.
+            PG College in 2021, and I&apos;ve been coding ever since.
           </p>
 
           <p>
@@ -69,15 +70,16 @@ const About = () => {
           </p>
 
           <p>
-            🧠 I’m a fast learner (obsessed, actually). Whether it's new
-            frameworks, tools, or trends, I’m always experimenting, improving,
-            and sharing what I learn. I also enjoy reading and writing about
-            tech — because the only thing better than learning is sharing.
+            🧠 I&apos;m a fast learner (obsessed, actually). Whether it&apos;s
+            new frameworks, tools, or trends, I&apos;m always experimenting,
+            improving, and sharing what I learn. I also enjoy reading and
+            writing about tech — because the only thing better than learning is
+            sharing.
           </p>
 
           <p>
-            ☕ I don’t even drink coffee... and yet, here I am, writing clean
-            code and debugging like it’s my superpower. 😄
+            ☕ I don&apos;t even drink coffee... and yet, here I am, writing
+            clean code and debugging like it&apos;s my superpower. 😄
           </p>
 
           <p>
@@ -89,7 +91,7 @@ const About = () => {
             >
               Gmail
             </Link>
-            — I’d love to connect!
+            — I&apos;d love to connect!
           </p>
 
           {/* 🔽 Download Resume Button */}
@@ -124,93 +126,20 @@ const About = () => {
       </div>
 
       <hr />
+      <Experience />
+      <hr />
 
-      <div>
-        <h2 className="text-2xl font-semibold text-white_01 mb-6">
-          Experiences
-        </h2>
-        <ul className="space-y-2">
-          {experiences.map(
-            ({ id, company, title, location, duration, points }) => (
-              <li
-                key={id}
-                className="bg-black_03 border border-black_02 rounded-2xl p-5 hover:bg-black_02/70 transition-colors"
-              >
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-3">
-                  <h3 className="text-lg font-medium text-white_03">
-                    {company}
-                  </h3>
-                  <p className="text-sm text-white_02 opacity-70 mt-1 sm:mt-0">
-                    {duration}
-                  </p>
-                </div>
-
-                <p className="text-white_02 text-sm mb-2">
-                  <span className="font-semibold">{title}</span> — {location}
-                </p>
-
-                <ul className="list-disc list-inside space-y-1 text-white_02 text-sm leading-relaxed pl-2">
-                  {points.map((point, index) => (
-                    <li key={index}>{point}</li>
-                  ))}
-                </ul>
-              </li>
-            )
-          )}
-        </ul>
-      </div>
+      {/* Education Section */}
+      <Education />
 
       <hr />
 
-      <div>
-        <h2>Education</h2>
-        <ul className="space-y-2">
-          {education.map(({ id, name, time, level }) => (
-            <li
-              key={id}
-              className="flex flex-col md:flex-row md:items-center justify-between border border-black_02 rounded-2xl p-4 bg-black_03 hover:bg-black_02/70 transition-all"
-            >
-              <h4 className="text-my_white">{name}</h4>
-              <div className="flex flex-wrap items-center gap-3 opacity-60 capitalize">
-                <p>{level}</p>
-                <span>({time})</span>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-
+      {/* Skills Section */}
+      <Skill />
       <hr />
 
-      <div>
-        <h2>Skills</h2>
-        <ul className={"flex items-center gap-2 flex-wrap w-full"}>
-          {skills.map(({ id, title, icon }) => (
-            <li title={title} key={id} className="bg-black_04 p-2 rounded-md">
-              <DynamicIcon icon={icon} />
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <hr />
-
-      <div>
-        <h2>Certificates</h2>
-        <ul className="space-y-2">
-          {certificates?.map(({ id, title, certificate, ...props }, index) => (
-            <li key={id}>
-              <Card
-                src={certificate}
-                title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}
-                {...props}
-                cardClass={"flex-col md:flex-row"}
-                cardImgClass={"aspect-video object-cover md:max-w-md"}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
+      {/* Certificate Section */}
+      <Certificate />
     </section>
   );
 };

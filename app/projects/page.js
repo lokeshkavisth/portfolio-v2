@@ -1,5 +1,5 @@
 import Card from "@/components/ui/Card";
-import { projects } from "@/data/data.json";
+import { projects } from "@/data/data";
 
 export const metadata = {
   title: "Lokesh Sharma's Projects",
@@ -23,8 +23,8 @@ const Projects = () => {
 
       <div>
         <ul className="space-y-6">
-          {projects?.map(({ id, title, thumbnail, ...props }, index) => (
-            <li key={id}>
+          {projects?.map(({ title, thumbnail, ...props }, index) => (
+            <li key={title}>
               <Card
                 src={thumbnail}
                 title={`${index < 10 ? `0${index + 1}` : index + 1} ${title}`}
