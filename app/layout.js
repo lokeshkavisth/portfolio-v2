@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 
+import { Analytics } from "@vercel/analytics/next";
 import Navbar from "@/components/ui/Navbar";
 
 export const metadata = {
@@ -53,6 +54,7 @@ export default function RootLayout({ children }) {
         <main className="max-w-screen-lg mx-auto py-40  text-sm px-4">
           {children}
         </main>
+        <Analytics />
       </body>
     </html>
   );
