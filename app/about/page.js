@@ -1,11 +1,11 @@
 import Certificate from "@/components/certificate";
 import Education from "@/components/education";
 import Experience from "@/components/experience";
+import Skill from "@/components/skill";
+import { buttonvariants } from "@/components/ui/Button";
 import Image from "next/image";
 import Link from "next/link";
 import { PiReadCvLogoDuotone } from "react-icons/pi";
-import Skill from "@/components/skill";
-import { buttonvariants } from "@/components/ui/Button";
 
 export const metadata = {
   title: "About Lokesh Sharma",
@@ -37,7 +37,7 @@ const About = () => {
       <div className="space-y-10">
         <div className="border-4 rounded-2xl border-black_04/70 overflow-hidden">
           <Image
-            src={"/profile.webp"}
+            src={"/profile.gif"}
             alt="Lokesh Sharma"
             width={1000}
             height={400}
