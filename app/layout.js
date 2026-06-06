@@ -97,8 +97,12 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       className={`${syne.variable} ${dmSans.variable} ${jetbrainsMono.variable} overflow-x-hidden`}
+      suppressHydrationWarning
     >
-      <body className="bg-black_01 text-white_02 font-sans overflow-x-hidden mesh-bg min-h-screen noise-overlay">
+      <body
+        className="bg-black_01 text-white_02 font-sans overflow-x-hidden mesh-bg min-h-screen noise-overlay"
+        suppressHydrationWarning
+      >
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
