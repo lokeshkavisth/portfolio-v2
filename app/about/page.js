@@ -2,145 +2,178 @@ import Certificate from "@/components/certificate";
 import Education from "@/components/education";
 import Experience from "@/components/experience";
 import Skill from "@/components/skill";
-import { buttonvariants } from "@/components/ui/Button";
+import { SectionHeader } from "@/components/SectionHeader";
+import { buttonvariants } from "@/components/ui/button-variants";
 import Image from "next/image";
 import Link from "next/link";
 import { PiReadCvLogoDuotone } from "react-icons/pi";
 
 export const metadata = {
-  title: "About Lokesh Sharma",
+  title: "About",
   description:
-    "Explore the story behind my passion for web development and dive into my journey as a MERN stack developer. Learn about my experiences, motivations, and the projects that fuel my drive to create exceptional web experiences.",
+    "Freelance web developer based in Jaipur, India. Learn about my experience, skills, and how I work with small business clients.",
 };
 
+function calculateAge(birthDateString) {
+  const today = new Date();
+  const birthDate = new Date(birthDateString);
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const hasBirthdayPassed =
+    today.getMonth() > birthDate.getMonth() ||
+    (today.getMonth() === birthDate.getMonth() &&
+      today.getDate() >= birthDate.getDate());
+  if (!hasBirthdayPassed) age -= 1;
+  return age;
+}
+
 const About = () => {
-  function calculateAge(birthDateString) {
-    const today = new Date();
-    const birthDate = new Date(birthDateString);
-
-    let age = today.getFullYear() - birthDate.getFullYear();
-
-    const hasBirthdayPassed =
-      today.getMonth() > birthDate.getMonth() ||
-      (today.getMonth() === birthDate.getMonth() &&
-        today.getDate() >= birthDate.getDate());
-
-    if (!hasBirthdayPassed) {
-      age -= 1;
-    }
-
-    return age;
-  }
+  const age = calculateAge("2000-10-15");
 
   return (
-    <section>
-      <div className="space-y-10">
-        <div className="border-4 rounded-2xl border-black_04/70 overflow-hidden">
-          <Image
-            src={"/profile.gif"}
-            alt="Lokesh Sharma"
-            width={1000}
-            height={400}
-            className="aspect-video object-cover rounded-lg"
-          />
-        </div>
+    <div className="space-y-16 md:space-y-24">
+      <SectionHeader
+        label="About me"
+        title="Builder, learner, debugger."
+        description="A snapshot of who I am, what I've shipped, and what I'm exploring next."
+      />
 
-        <div className="space-y-8">
+      <div className="grid lg:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] gap-10 lg:gap-14 items-start">
+        <div className="space-y-6 text-white_02/90 order-2 lg:order-1">
           <p>
-            👋 Hey there! I&apos;m Lokesh Sharma — a{" "}
-            {calculateAge("2000-10-15")}
-            -year-old Full Stack Web Developer coding my way from the colorful
-            streets of{" "}
+            Hey — I&apos;m <span className="text-white_01 font-medium">Lokesh Sharma</span>
+            , a {age}-year-old full-stack developer from{" "}
             <Link
-              href="https://www.google.com/maps/place/Jaipur,+Rajasthan/@26.8852108,75.7905578,11z/data=!4m15!1m8!3m7!1s0x396c4adf4c57e281:0xce1c63a0cf22e09!2sJaipur,+Rajasthan!3b1!8m2!3d26.9124336!4d75.7872709!16zL20vMDE2NzIy!3m5!1s0x396c4adf4c57e281:0xce1c63a0cf22e09!8m2!3d26.9124336!4d75.7872709!16zL20vMDE2NzIy?entry=ttu"
+              href="https://www.google.com/maps/place/Jaipur,+Rajasthan"
               target="_blank"
-              className="border-b-4 border-b-white_02 text-white_01"
+              rel="noopener noreferrer"
+              className="text-accent-cyan hover:text-white_01 underline decoration-accent/40 underline-offset-4 transition-colors"
             >
-              Jaipur
+              Jaipur, Rajasthan
             </Link>
-            , Rajasthan, India. I earned my degree in Arts from SS Jain Subodh
-            PG College in 2021, and I&apos;ve been coding ever since.
+            . I studied Arts at SS Jain Subodh PG College (2021) and pivoted into
+            code right after — and never looked back.
           </p>
 
           <p>
-            🚀 I dove into web dev right after college, fueled by curiosity and
-            a love for building things. These days, I specialize in the MERN
-            stack — MongoDB, Express.js, React, and Node.js — and I use it to
-            bring ideas to life on the web.
+            Today I freelance for small businesses — building websites, landing
+            pages, and redesigns that look professional and actually convert
+            visitors into customers.
           </p>
 
           <p>
-            🧠 I&apos;m a fast learner (obsessed, actually). Whether it&apos;s
-            new frameworks, tools, or trends, I&apos;m always experimenting,
-            improving, and sharing what I learn. I also enjoy reading and
-            writing about tech — because the only thing better than learning is
-            sharing.
+            I learn obsessively: new frameworks, better patterns, sharper tooling.
+            I also write and read about tech because sharing knowledge is half the
+            fun.
           </p>
 
-          <p>
-            ☕ I don&apos;t even drink coffee... and yet, here I am, writing
-            clean code and debugging like it&apos;s my superpower. 😄
+          <p className="font-mono text-sm text-white_02/70 border-l-2 border-accent/40 pl-4">
+            Fun fact: I don&apos;t drink coffee — yet I debug production at 2am
+            like it&apos;s a sport.
           </p>
 
-          <p>
-            📧 Wanna talk tech, collab, or just say hi? Hit me up via{" "}
-            <Link
-              href="mailto:lokeshkavisth.dev@gmail.com"
-              target="_blank"
-              className="border-b-4 border-b-white_02 text-white_01"
-            >
-              Gmail
-            </Link>
-            — I&apos;d love to connect!
-          </p>
-
-          {/* 🔽 Download Resume Button */}
-          <div>
+          <div className="flex flex-wrap gap-4 pt-2">
             <a
               className={buttonvariants({ variant: "primary" })}
               download
-              href={"/MERN-Developer-Lokesh-Sharma.pdf"}
-              title={"Get resume"}
+              href="/MERN-Developer-Lokesh-Sharma.pdf"
+              title="Download resume"
             >
-              <PiReadCvLogoDuotone /> Download Resume
+              <PiReadCvLogoDuotone />
+              Download resume
             </a>
+            <Link
+              href="/contact"
+              className={buttonvariants({ variant: "secondary" })}
+            >
+              Start a project
+            </Link>
           </div>
 
-          {/* 🧠 Currently Learning / Fun Fact Section */}
-          <div className="pt-6 border-t border-black_02 space-y-2">
-            <h4 className="text-white_03 font-semibold text-lg">
-              💡 Currently learning…
-            </h4>
-            <p className="text-white_02">
-              Experimenting with PostgreSQL, Prisma, and Zustand while building
-              a side project.
-            </p>
+          <div className="glass-card p-6 sm:p-8 space-y-4 mt-8">
+            <p className="label-mono">Working with me</p>
+            <h3 className="font-display text-white_01 text-lg">
+              What clients can expect
+            </h3>
+            <ul className="space-y-3 text-sm text-white_02/85">
+              <li className="flex gap-3">
+                <span className="text-accent-cyan shrink-0">◆</span>
+                <span>
+                  <strong className="text-white_01">Clear communication</strong> —
+                  regular updates via email or video call, no disappearing acts.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent-cyan shrink-0">◆</span>
+                <span>
+                  <strong className="text-white_01">Fixed quotes upfront</strong> —
+                  you know the cost and timeline before any work begins.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent-cyan shrink-0">◆</span>
+                <span>
+                  <strong className="text-white_01">2 revision rounds included</strong> —
+                  we refine until you&apos;re happy with the result.
+                </span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-accent-cyan shrink-0">◆</span>
+                <span>
+                  <strong className="text-white_01">Remote-friendly</strong> —
+                  I work with clients across India and internationally (IST timezone).
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-            <h4 className="text-white_03 font-semibold text-lg">🤓 Fun fact</h4>
-            <p className="text-white_02">
-              I once debugged a production bug faster than it took my noodles to
-              boil. Coincidence? Maybe. Talent? Definitely.
-            </p>
+        <div className="order-1 lg:order-2 space-y-6">
+          <div className="relative">
+            <span className="sticker absolute -top-3 -left-2 z-20 bg-accent-muted border-accent/30 text-accent-cyan animate-wiggle">
+              ★ dev
+            </span>
+            <span className="sticker absolute -bottom-2 -right-2 z-20 bg-black_02 border-accent-cyan/30 text-white_02 rotate-3">
+              Jaipur, IN
+            </span>
+            <div className="relative rounded-2xl overflow-hidden glass-card p-1.5 rotate-[-1deg] hover:rotate-0 transition-transform duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/25 via-transparent to-accent-cyan/15 pointer-events-none rounded-2xl z-10" />
+              <Image
+                src="/profile.gif"
+                alt="Lokesh Sharma"
+                width={800}
+                height={500}
+                className="aspect-[4/3] w-full object-cover rounded-xl"
+                priority
+              />
+            </div>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-4">
+            <div className="glass-card p-5 space-y-2">
+              <p className="label-mono">Currently learning</p>
+              <p className="text-sm text-white_02/90">
+                PostgreSQL, Prisma, and Zustand on a side project.
+              </p>
+            </div>
+            <div className="glass-card p-5 space-y-2">
+              <p className="label-mono">Superpower</p>
+              <p className="text-sm text-white_02/90">
+                Fixed a prod bug before my noodles finished boiling.
+              </p>
+            </div>
           </div>
         </div>
       </div>
 
-      <hr />
+      <div className="section-divider" role="separator" />
       <Experience />
-      <hr />
-
-      {/* Education Section */}
+      <div className="section-divider" role="separator" />
       <Education />
-
-      <hr />
-
-      {/* Skills Section */}
+      <div className="section-divider" role="separator" />
       <Skill />
-      <hr />
-
-      {/* Certificate Section */}
+      <div className="section-divider" role="separator" />
       <Certificate />
-    </section>
+    </div>
   );
 };
 

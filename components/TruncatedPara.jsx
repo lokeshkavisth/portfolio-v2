@@ -1,33 +1,33 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+
+import { useEffect, useRef, useState } from "react";
 
 const TruncatedPara = ({ text }) => {
-  const [isTruncated, setIsTruncated] = useState(true);
   const [showReadMore, setShowReadMore] = useState(false);
+  const [isTruncated, setIsTruncated] = useState(false);
   const pRef = useRef(null);
 
   useEffect(() => {
     const p = pRef.current;
-    const innerHeight = p.scrollHeight - p.clientHeight;
-    setIsTruncated(innerHeight > 0);
-  }, []);
-
-  const handleReadMore = () => setShowReadMore(!showReadMore);
+    if (!p) return;
+    setIsTruncated(p.scrollHeight > p.clientHeight);
+  }, [text]);
 
   return (
     <div>
       <p
         ref={pRef}
-        className={`line-clamp-2 ${showReadMore && "line-clamp-none"}`}
+        className={`text-sm text-white_02/85 ${showReadMore ? "" : "line-clamp-2"}`}
       >
         {text}
       </p>
       {isTruncated && (
         <button
-          className="text-white_01 border-b border-white_01 my-1"
-          onClick={handleReadMore}
+          type="button"
+          className="mt-2 font-mono text-xs text-accent-cyan hover:text-white_01 transition-colors"
+          onClick={() => setShowReadMore((prev) => !prev)}
         >
-          {showReadMore ? "Read Less" : "Read More"}
+          {showReadMore ? "Show less" : "Read more"}
         </button>
       )}
     </div>

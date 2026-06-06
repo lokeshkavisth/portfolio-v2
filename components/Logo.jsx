@@ -1,20 +1,21 @@
-import { Great_Vibes } from "next/font/google";
 import Link from "next/link";
-import React from "react";
-
-const greatVibes = Great_Vibes({
-  subsets: ["latin"],
-  weight: ["400"],
-});
 
 const Logo = () => {
   return (
     <Link
-      href={"/"}
-      className={`text-xl text-white_01 block ${greatVibes.className}`}
-      style={{ transform: "rotate(-4deg)" }}
+      href="/"
+      className="group flex items-center gap-2 font-display text-lg sm:text-xl font-semibold text-white_01 tracking-tight"
     >
-      Lokesh Sharma.
+      <span className="relative flex h-2 w-2">
+        <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-60" />
+        <span className="relative inline-flex h-2 w-2 rounded-full bg-accent-cyan" />
+      </span>
+      <span>
+        Lokesh
+        <span className="text-white_02/70 group-hover:text-accent transition-colors">
+          .dev
+        </span>
+      </span>
     </Link>
   );
 };

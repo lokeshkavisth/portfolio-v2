@@ -1,54 +1,118 @@
+"use client";
+
 import { Button } from "./ui/Button";
-import { IoMail } from "react-icons/io5";
 import Link from "next/link";
 import { socialHome } from "@/constants/constent";
+import { HiArrowUpRight } from "react-icons/hi2";
+import { motion } from "framer-motion";
+import { HeroTerminal } from "./creative/HeroTerminal";
+import { FloatingDecor } from "./creative/FloatingDecor";
+import { projects } from "@/data/data";
+
+const stats = [
+  { label: "Projects delivered", value: `${projects.length}+` },
+  { label: "Typical turnaround", value: "2–4 wks" },
+  { label: "Response time", value: "< 24 hrs" },
+];
 
 export function Hero() {
-  const socialLinksHome = socialHome?.map(({ id, title, icon, path }) => (
-    <li key={id} className=" hover:bg-black_02 p-2 rounded-md">
-      <Link
-        target="_blank"
-        href={`${path}lokeshkavisth`}
-        title={title}
-        className="hover:text-white_01"
-      >
-        {icon}
-      </Link>
-    </li>
-  ));
-
   return (
-    <>
-      <h1 className="text-4xl sm:text-5xl pb-10">
-        Namaste! I’m Lokesh — your friendly neighborhood full-stack developer
-        from Jaipur.
-      </h1>
+    <section className="relative space-y-10 md:space-y-12">
+      <FloatingDecor />
 
-      <p className="pb-4">
-        I design and build web experiences that are fast, intuitive, and a
-        little bit delightful. Whether it’s front-end, back-end, or somewhere in
-        between — I bring ideas to life through clean, thoughtful code.
-      </p>
+      <motion.div
+        initial={{ opacity: 0, y: 12 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-wrap items-center gap-3 relative z-10"
+      >
+        <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass font-mono text-xs text-accent-cyan border border-accent-cyan/20">
+          <span className="h-1.5 w-1.5 rounded-full bg-accent-cyan animate-pulse" />
+          Available for freelance projects
+        </span>
+        <span className="font-mono text-xs text-white_02/50 px-2 py-1 rounded-md bg-black_02/50">
+          Small business websites · Remote worldwide
+        </span>
+      </motion.div>
 
-      <p>
-        Also, fun fact: I don’t drink coffee. Still a developer though — powered
-        by curiosity, good vibes, and way too many open tabs. Let’s build
-        something cool together.
-      </p>
+      <div className="grid lg:grid-cols-[1fr_auto] gap-10 lg:gap-12 items-start relative z-10">
+        <div className="space-y-8">
+          <motion.div
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="space-y-5"
+          >
+            <h1 className="max-w-4xl">
+              <span className="block text-white_02/70 text-xl sm:text-2xl md:text-3xl font-normal mb-3 font-sans">
+                Hey, I&apos;m Lokesh —
+              </span>
+              <span className="block text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-semibold leading-[1.1] text-white_01">
+                I help small businesses get a website that{" "}
+                <span className="text-gradient">looks pro and brings customers</span>
+                .
+              </span>
+            </h1>
 
-      <section className="pt-16">
-        <ul className="flex flex-wrap items-center gap-5 text-2xl">
-          {socialLinksHome}
-          <li className="sm:ml-10">
-            <Button
-              href={"mailto:lokeshkavisth.dev@gmail.com"}
-              title={"Let's discuss"}
-            >
-              <IoMail /> Email me
+            <p className="max-w-xl text-lg text-white_02/90 border-l-2 border-accent/50 pl-5">
+              Freelance web developer specializing in business websites, landing
+              pages, and redesigns — built fast, mobile-first, and ready to convert.
+            </p>
+          </motion.div>
+
+          <motion.ul
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.35 }}
+            className="grid grid-cols-3 gap-3 max-w-md"
+          >
+            {stats.map(({ label, value }) => (
+              <li
+                key={label}
+                className="glass rounded-xl p-3 text-center hover:border-accent/30 transition-colors"
+              >
+                <p className="font-display text-lg sm:text-xl text-white_01">{value}</p>
+                <p className="font-mono text-[10px] text-white_02/50 mt-1 uppercase tracking-wide">
+                  {label}
+                </p>
+              </li>
+            ))}
+          </motion.ul>
+
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.45 }}
+            className="flex flex-wrap items-center gap-4"
+          >
+            <Button href="/contact" title="Start a freelance project" analyticsEvent="contact_cta_click" analyticsProps={{ location: "hero" }}>
+              Start a project
+              <HiArrowUpRight />
             </Button>
-          </li>
-        </ul>
-      </section>
-    </>
+            <Button href="/projects" variant="secondary">
+              See my work
+            </Button>
+          </motion.div>
+
+          <ul className="flex flex-wrap items-center gap-2">
+            {socialHome.map(({ id, title, icon, path }) => (
+              <li key={id}>
+                <Link
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={`${path}lokeshkavisth`}
+                  title={title}
+                  className="flex h-11 w-11 items-center justify-center rounded-xl glass text-lg text-white_02 hover:text-accent-cyan hover:border-accent/40 transition-all duration-300"
+                >
+                  {icon}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <HeroTerminal />
+      </div>
+    </section>
   );
 }

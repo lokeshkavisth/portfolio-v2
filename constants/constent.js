@@ -1,5 +1,5 @@
-import { FaHashnode, FaXTwitter } from "react-icons/fa6";
-import { FaHome, FaLinkedinIn, FaUser } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaHome, FaLinkedinIn, FaUser, FaBriefcase, FaEnvelope } from "react-icons/fa";
 
 import { PiTerminalWindowFill } from "react-icons/pi";
 import { VscGithubInverted } from "react-icons/vsc";
@@ -34,20 +34,26 @@ export const navMenu = [
   },
   {
     id: 2,
-    title: "About",
-    icon: <FaUser />,
-    url: "/about",
-  },
-  {
-    id: 3,
-    title: "Blog",
-    icon: <FaHashnode />,
-    url: "/blogs",
+    title: "Services",
+    icon: <FaBriefcase />,
+    url: "/services",
   },
   {
     id: 3,
     title: "Projects",
     icon: <PiTerminalWindowFill />,
     url: "/projects",
+  },
+  {
+    id: 4,
+    title: "About",
+    icon: <FaUser />,
+    url: "/about",
+  },
+  {
+    id: 5,
+    title: "Contact",
+    icon: <FaEnvelope />,
+    url: "/contact",
   },
 ];
