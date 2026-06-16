@@ -71,6 +71,27 @@ export const projects = [
     clientType: "Productivity tool",
   },
   {
+    title: "Session Cleaner - Chrome extension",
+    description:
+      "A one-click Chrome extension to clear session data, cookies, local storage, and IndexedDB. Features selective cleaning, auto page reload, cleaning history, saved preferences, and a modern popup UI — built for privacy and performance.",
+    stack: [
+      "JavaScript",
+      "Chrome Extension",
+      "Manifest V3",
+      "HTML/CSS",
+      "Session Management",
+    ],
+    github_url: "https://github.com/lokeshkavisth/session-cleaner",
+    live_url:
+      "https://chromewebstore.google.com/detail/session-cleaner/lhbahmkknbldjahnfpkmhclicocjjakj",
+    thumbnail: "/session-cleaner.png",
+    problem:
+      "Users needed a fast, privacy-focused way to wipe browsing session data without digging through Chrome settings.",
+    outcome:
+      "Published on the Chrome Web Store (v1.1) with selective cleaning, history tracking, and success feedback — all processing done locally on-device.",
+    clientType: "Privacy / Developer tool",
+  },
+  {
     title: "Darkroom - VS Code Theme",
     description:
       "A sleek and minimal dark theme for Visual Studio Code designed for developers who prefer a distraction-free and visually calming coding environment. Available on the VS Code Marketplace.",
